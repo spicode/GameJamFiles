@@ -2,17 +2,23 @@
 
 [ext_resource type="Texture2D" uid="uid://cc125w1hbbfoy" path="res://icon.svg" id="1_gj1ij"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mv668"]
-size = Vector2(125, 129)
+[sub_resource type="GDScript" id="GDScript_dt2o2"]
+script/source = "extends Sprite2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Icon" type="Sprite2D" parent="."]
 position = Vector2(601, 351)
 texture = ExtResource("1_gj1ij")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Icon"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Icon/RigidBody2D"]
-position = Vector2(-0.5, 0.5)
-shape = SubResource("RectangleShape2D_mv668")
+script = SubResource("GDScript_dt2o2")
