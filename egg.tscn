@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://dbca20uv0xou"]
+[gd_scene load_steps=4 format=3 uid="uid://dbca20uv0xou"]
 
 [ext_resource type="Texture2D" uid="uid://dkosqv1jungdi" path="res://art/EGG.png" id="1_u4fgm"]
+[ext_resource type="Script" path="res://object.gd" id="2_5k0so"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e86g2"]
+radius = 11.0
 
 [node name="egg" type="Node2D"]
+script = ExtResource("2_5k0so")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_u4fgm")
@@ -10,3 +15,11 @@ texture = ExtResource("1_u4fgm")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, 7)
+shape = SubResource("CapsuleShape2D_e86g2")
+
+[connection signal="area_entered" from="Area2D" to="Area2D" method="_on_area_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[connection signal="mouse_entered" from="Area2D" to="Area2D" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="Area2D" method="_on_mouse_exited"]
