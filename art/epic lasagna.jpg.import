@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b640boe60xlr3"
-path="res://.godot/imported/epic lasagna.jpg-167ea6bef2413c6ae068e962a1c98ca8.ctex"
+path="res://.godot/imported/epic lasagna.jpg-cbc18d07f8b2022e5d4f48f0429fd6af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://objects(like_player)/epic lasagna.jpg"
-dest_files=["res://.godot/imported/epic lasagna.jpg-167ea6bef2413c6ae068e962a1c98ca8.ctex"]
+source_file="res://art/epic lasagna.jpg"
+dest_files=["res://.godot/imported/epic lasagna.jpg-cbc18d07f8b2022e5d4f48f0429fd6af.ctex"]
 
 [params]
 

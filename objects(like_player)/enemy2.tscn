@@ -1,7 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://lxc3fx3wwegb"]
 
 [ext_resource type="Script" path="res://scripts/enemy.gd" id="1_wstef"]
-[ext_resource type="Texture2D" uid="uid://b640boe60xlr3" path="res://objects(like_player)/epic lasagna.jpg" id="2_exime"]
+[ext_resource type="Texture2D" uid="uid://b640boe60xlr3" path="res://art/epic lasagna.jpg" id="2_exime"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ussp"]
 
