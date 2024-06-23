@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://scripts/enemy.gd" id="1_1oh7w"]
 [ext_resource type="Texture2D" uid="uid://b640boe60xlr3" path="res://art/epic lasagna.jpg" id="2_kg2n1"]
 
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_wl73k"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
