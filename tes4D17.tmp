@@ -9,18 +9,13 @@
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_2r1jj")]
 position = Vector2(16, -6)
-max_health = null
-speed = null
-jump_force = null
-gravity = null
-
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(-16, 6)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_m2k43")
+
+[node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="enemy" parent="." instance=ExtResource("2_r1oig")]
 position = Vector2(-42, -24)
