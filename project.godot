@@ -16,21 +16,10 @@ config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 <<<<<<<Updatedupstreamrun/main_scene="res://test_area.tscn"
 
+[autoload]
+
+Global="*res://scripts/global.gd"
+
 [dotnet]
 
 project/assembly_name="GameJam"
-
-[input]
-
-move_right={
-"deadzone": 0.5,
-"events": []
-}
-move_left={
-"deadzone": 0.5,
-"events": []
-}
-jump={
-"deadzone": 0.5,
-"events": []
-}
