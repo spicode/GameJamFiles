@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://bb2oldp4xtxnw"]
+
+[ext_resource type="Texture2D" uid="uid://dfrhxqr6s6e6n" path="res://scripts/EGG.png" id="1_vlxba"]
+[ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="2_baxht"]
+[ext_resource type="PackedScene" uid="uid://b43j02bu2c86u" path="res://hands.tscn" id="3_vy4t0"]
+
+[node name="egg object" type="Sprite2D"]
+texture = ExtResource("1_vlxba")
+script = ExtResource("2_baxht")
+
+[node name="hands" parent="." instance=ExtResource("3_vy4t0")]

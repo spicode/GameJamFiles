@@ -7,6 +7,7 @@
 radius = 11.0
 
 [node name="egg" type="Node2D"]
+position = Vector2(419, 290)
 script = ExtResource("1_1861y")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
