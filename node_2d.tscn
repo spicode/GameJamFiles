@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cnpakyvohd1yd"]
 
-[ext_resource type="Texture2D" uid="uid://cc125w1hbbfoy" path="res://icon.svg" id="1_gj1ij"]
+[ext_resource type="Texture2D" uid="uid://cc125w1hbbfoy" path="res://art/icon.svg" id="1_50y2p"]
 
 [sub_resource type="GDScript" id="GDScript_dt2o2"]
 script/source = "extends Sprite2D
@@ -20,5 +20,5 @@ func _process(delta):
 
 [node name="Icon" type="Sprite2D" parent="."]
 position = Vector2(601, 351)
-texture = ExtResource("1_gj1ij")
+texture = ExtResource("1_50y2p")
 script = SubResource("GDScript_dt2o2")
