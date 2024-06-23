@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4f58llm605ux"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yobvj"]
+load_path = "res://.godot/imported/CHESSE INGREDIENTS.png-bedda60463d6a0b585b5e4ec8778f9e7.ctex"
+
+[node name="cheese" type="Sprite2D"]
+position = Vector2(-24, -30)
+scale = Vector2(3, 3)
+texture = SubResource("CompressedTexture2D_yobvj")

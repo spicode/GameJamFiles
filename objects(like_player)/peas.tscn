@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdx1a1fs0jmg1"]
+
+[ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="1_5ll00"]
+[ext_resource type="Texture2D" uid="uid://sn3neoe1gnkh" path="res://art/ingrediants/PEAS INGREDIENTS.png" id="1_ycvls"]
+
+[node name="Peas" type="Sprite2D"]
+scale = Vector2(3, 3)
+texture = ExtResource("1_ycvls")
+offset = Vector2(-6.987, 1.667)
+region_enabled = true
+region_rect = Rect2(32.2952, 25.4586, 15.6751, 7.56731)
+script = ExtResource("1_5ll00")

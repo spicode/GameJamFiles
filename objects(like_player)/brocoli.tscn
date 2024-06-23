@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://byn7pabfelh75"]
+
+[ext_resource type="Texture2D" uid="uid://dgmnht8mmcxyk" path="res://art/ingrediants/BROCOLI INGREDIENTS.png" id="1_6pwpm"]
+[ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="2_ikfbn"]
+
+[node name="brocoli" type="Sprite2D"]
+scale = Vector2(3, 3)
+texture = ExtResource("1_6pwpm")
+region_enabled = true
+region_rect = Rect2(16.7659, 17.8541, 14.8383, 13.2556)
+script = ExtResource("2_ikfbn")

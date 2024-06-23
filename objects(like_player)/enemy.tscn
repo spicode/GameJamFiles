@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cainv4ov4u6o8"]
 
-[ext_resource type="Texture2D" uid="uid://dkosqv1jungdi" path="res://art/EGG.png" id="2_htkat"]
+[ext_resource type="Texture2D" uid="uid://dkosqv1jungdi" path="res://art/ingrediants/EGG.png" id="1_8pxdg"]
 
 [sub_resource type="GDScript" id="GDScript_l0t25"]
 script/source = "extends CharacterBody2D
@@ -49,7 +49,7 @@ shape = SubResource("CapsuleShape2D_as6dn")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -0.5)
 scale = Vector2(0.09375, 0.109375)
-texture = ExtResource("2_htkat")
+texture = ExtResource("1_8pxdg")
 
 [node name="detectionArea" type="Area2D" parent="."]
 collision_layer = 2

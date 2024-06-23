@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmo8yodnbrcmy"]
+
+[ext_resource type="Texture2D" uid="uid://ch6urptsudqvh" path="res://art/ingrediants/CARROT INGREDIENTS.png" id="1_fhoqy"]
+[ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="2_b7x8l"]
+
+[node name="Carrot" type="Sprite2D"]
+scale = Vector2(3, 3)
+texture = ExtResource("1_fhoqy")
+region_enabled = true
+region_rect = Rect2(10.1163, 32.6513, 27.8961, 17.4103)
+script = ExtResource("2_b7x8l")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkosqv1jungdi"
-path="res://.godot/imported/EGG.png-b53b93421b79257f40c075da9bead8a8.ctex"
+uid="uid://sn3neoe1gnkh"
+path="res://.godot/imported/PEAS INGREDIENTS.png-9936f7c1763f3a84db57c1df39b2070b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/EGG.png"
-dest_files=["res://.godot/imported/EGG.png-b53b93421b79257f40c075da9bead8a8.ctex"]
+source_file="res://art/ingrediants/PEAS INGREDIENTS.png"
+dest_files=["res://.godot/imported/PEAS INGREDIENTS.png-9936f7c1763f3a84db57c1df39b2070b.ctex"]
 
 [params]
 

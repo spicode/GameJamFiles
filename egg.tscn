@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dbca20uv0xou"]
 
 [ext_resource type="Script" path="res://scripts/object.gd" id="1_1861y"]
-[ext_resource type="Texture2D" uid="uid://dkosqv1jungdi" path="res://art/EGG.png" id="1_u4fgm"]
+[ext_resource type="Texture2D" uid="uid://dkosqv1jungdi" path="res://art/ingrediants/EGG.png" id="2_4265r"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e86g2"]
 radius = 11.0
@@ -11,7 +11,7 @@ position = Vector2(419, 290)
 script = ExtResource("1_1861y")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_u4fgm")
+texture = ExtResource("2_4265r")
 
 [node name="Area2D" type="Area2D" parent="."]
 
