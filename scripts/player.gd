@@ -9,7 +9,7 @@ var gravity = 800.0
 var is_on_ground = false
 
 func _ready():
-	pass
+	add_to_group("Player")
 
 func _physics_process(delta):
 	handle_input(delta)
