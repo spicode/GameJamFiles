@@ -20,7 +20,6 @@ var is_alive: bool = true
 func _ready():
 	start_position = global_position
 	target_position = start_position + Vector2(patrol_distance, 0)
-	  # Adjust the cast_to as needed
 	ground_ray.enabled = true
 
 func _physics_process(delta):
