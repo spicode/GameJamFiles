@@ -1,16 +1,64 @@
-[gd_scene load_steps=4 format=3 uid="uid://cainv4ov4u6o8"]
+[gd_scene load_steps=5 format=3 uid="uid://cainv4ov4u6o8"]
 
-[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_1oh7w"]
-[ext_resource type="Texture2D" uid="uid://b640boe60xlr3" path="res://art/epic lasagna.jpg" id="2_kg2n1"]
+[ext_resource type="Texture2D" uid="uid://dkosqv1jungdi" path="res://art/EGG.png" id="2_htkat"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_wl73k"]
+[sub_resource type="GDScript" id="GDScript_l0t25"]
+script/source = "extends CharacterBody2D
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_1oh7w")
+
+var SPEED = 25.0
+var playerChase = false
+var player = null
+const JUMP_VELOCITY = -400.0
+
+
+# Get the gravity from the project settings to be synced with RigidBody nodes.
+var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
+
+
+func _physics_process(delta):
+	# Add the gravity.
+	if not is_on_floor():
+		velocity.y += gravity * delta
+	if playerChase:
+		position.x =(player.position - position)/SPEED
+
+
+func _on_detection_area_body_entered(body):
+	player = body
+	playerChase =true
+	
+
+
+func _on_detection_area_body_exited(body):
+	player = null
+	playerChase = false
+"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_as6dn"]
+radius = 1.0
+height = 4.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p4tol"]
+
+[node name="enemy" type="CharacterBody2D"]
+scale = Vector2(10, 10)
+script = SubResource("GDScript_l0t25")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_wl73k")
+shape = SubResource("CapsuleShape2D_as6dn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.0186667, 0.02)
-texture = ExtResource("2_kg2n1")
+position = Vector2(0, -0.5)
+scale = Vector2(0.09375, 0.109375)
+texture = ExtResource("2_htkat")
+
+[node name="detectionArea" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detectionArea"]
+shape = SubResource("CircleShape2D_p4tol")
+
+[connection signal="body_entered" from="detectionArea" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="detectionArea" to="." method="_on_detection_area_body_exited"]

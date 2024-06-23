@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dtxxasrmm7je7"]
+[gd_scene load_steps=7 format=3 uid="uid://dtxxasrmm7je7"]
 
+[ext_resource type="PackedScene" path="res://objects(like_player)/enemy.tscn" id="1_vye00"]
 [ext_resource type="Texture2D" uid="uid://dkosqv1jungdi" path="res://art/EGG.png" id="2_1r6mn"]
 [ext_resource type="PackedScene" uid="uid://lxc3fx3wwegb" path="res://objects(like_player)/player.tscn" id="2_r1oig"]
 [ext_resource type="Texture2D" uid="uid://dfrhxqr6s6e6n" path="res://scripts/EGG.png" id="3_pipbd"]
-[ext_resource type="PackedScene" uid="uid://cs3segskwet3u" path="res://objects(like_player)/real.enemy.tscn" id="4_ofbbc"]
+[ext_resource type="PackedScene" uid="uid://cainv4ov4u6o8" path="res://enemy.tscn" id="5_llr76"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_m2k43"]
 
@@ -18,6 +19,7 @@ shape = SubResource("WorldBoundaryShape2D_m2k43")
 
 [node name="player" parent="." instance=ExtResource("2_r1oig")]
 position = Vector2(-56, -20)
+collision_layer = 3
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 
@@ -30,5 +32,7 @@ position = Vector2(151, -6)
 scale = Vector2(0.46875, 0.484375)
 texture = ExtResource("3_pipbd")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("4_ofbbc")]
-position = Vector2(-100, -4)
+[node name="enemy2" parent="." instance=ExtResource("5_llr76")]
+
+[node name="enemy" parent="." instance=ExtResource("1_vye00")]
+position = Vector2(74, -2)

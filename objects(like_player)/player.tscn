@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ussp"]
 size = Vector2(25, 24)
 
-[node name="enemy2" type="CharacterBody2D"]
+[node name="enemy2" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_gotet")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
