@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dtxxasrmm7je7"]
+[gd_scene load_steps=6 format=3 uid="uid://dtxxasrmm7je7"]
 
 [ext_resource type="Texture2D" uid="uid://dkosqv1jungdi" path="res://art/EGG.png" id="2_1r6mn"]
 [ext_resource type="PackedScene" uid="uid://lxc3fx3wwegb" path="res://objects(like_player)/player.tscn" id="2_r1oig"]
+[ext_resource type="Texture2D" uid="uid://dfrhxqr6s6e6n" path="res://scripts/EGG.png" id="3_pipbd"]
+[ext_resource type="PackedScene" uid="uid://cs3segskwet3u" path="res://objects(like_player)/real.enemy.tscn" id="4_ofbbc"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_m2k43"]
 
@@ -20,5 +22,13 @@ position = Vector2(-56, -20)
 [node name="Camera2D" type="Camera2D" parent="player"]
 
 [node name="Egg" type="Sprite2D" parent="."]
-position = Vector2(58, -25)
+position = Vector2(58, -22)
 texture = ExtResource("2_1r6mn")
+
+[node name="Egg2" type="Sprite2D" parent="."]
+position = Vector2(151, -6)
+scale = Vector2(0.46875, 0.484375)
+texture = ExtResource("3_pipbd")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("4_ofbbc")]
+position = Vector2(-100, -4)

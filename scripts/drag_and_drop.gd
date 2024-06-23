@@ -1,6 +1,6 @@
 extends Sprite2D
 var mouse_offset #center mouse on click
-var delay = 3
+var delay = 6
 func _physics_process(delta):
 	if Global.is_dragging == true:
 		var tween = get_tree().create_tween()
