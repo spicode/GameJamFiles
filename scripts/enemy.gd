@@ -23,7 +23,6 @@ func _ready():
 	ground_ray.enabled = true
 	ground_ray.cast_to = Vector2(0, 20)
 	
-
 func _physics_process(delta):
 	if is_alive:
 		if is_chasing:
