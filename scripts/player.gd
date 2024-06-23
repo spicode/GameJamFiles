@@ -30,8 +30,8 @@ func handle_input(delta):
 		jump()
 
 	# Debug prints
-	print("Velocity:", velocity)
-	print("Is on ground:", is_on_floor())
+
+
 
 func jump():
 	if is_on_floor():
