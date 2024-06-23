@@ -40,6 +40,6 @@ func _on_area_2d_body_exited(body):
 		is_inside_dropble = false
 		body.modulate = Color(Color.MEDIUM_PURPLE, 0.7)
 func _on_area_2d_mouse_entered():
-	  if not Global.is_dragging:
+	if not Global.is_dragging:
 		draggble = true
 		scale = Vector2(1.05, 1.05)
