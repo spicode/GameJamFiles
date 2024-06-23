@@ -1,13 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://dkdgc2eu1usm4"]
+[gd_scene load_steps=3 format=3 uid="uid://dkdgc2eu1usm4"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_oj5od"]
 [ext_resource type="Texture2D" uid="uid://cc125w1hbbfoy" path="res://art/icon.svg" id="2_ag7m5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_op6fd"]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="RigidBody2D"]
 input_pickable = true
-script = ExtResource("1_oj5od")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_op6fd")
@@ -16,3 +14,5 @@ shape = SubResource("CircleShape2D_op6fd")
 position = Vector2(1, -5)
 scale = Vector2(0.24707, 0.240234)
 texture = ExtResource("2_ag7m5")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]

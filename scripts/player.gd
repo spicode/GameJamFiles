@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 # Player properties
 var speed = 200.0
-var jump_force = -150  # Negative value for upward force
+var jump_force = -300.0  # Negative value for upward force
 var gravity = 800.0
 
 # State
