@@ -3,17 +3,19 @@
 [ext_resource type="Script" path="res://scripts/enemy.gd" id="1_gc0bw"]
 [ext_resource type="Texture2D" uid="uid://cc125w1hbbfoy" path="res://art/icon.svg" id="2_ag7m5"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_op6fd"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tpw21"]
+size = Vector2(30, 28)
 
 [node name="CharacterBody2D" type="RigidBody2D"]
 input_pickable = true
 script = ExtResource("1_gc0bw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_op6fd")
+position = Vector2(-0.187515, -1.62502)
+shape = SubResource("RectangleShape2D_tpw21")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1, -5)
+position = Vector2(-0.187515, -1.62502)
 scale = Vector2(0.24707, 0.240234)
 texture = ExtResource("2_ag7m5")
 

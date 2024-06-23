@@ -1,10 +1,10 @@
 extends RigidBody2D
 
-# Enemy properties
-@export var speed = 100.0
-@export var patrol_distance = 200.0
+# Enemy propertiesvar speed = 100.0
+@export var patrol_distance = 1
 @export var chase_distance = 300.0
 @export var detection_radius = 150.0
+@export var speed = 133.0
 
 # Nodes
 @onready var sprite = $Sprite
@@ -22,7 +22,11 @@ func _ready():
 	target_position = start_position + Vector2(patrol_distance, 0)
 	ground_ray.enabled = true
 	ground_ray.cast_to = Vector2(0, 20)
-	
+func patrol(delta):
+	var velocity = Vector2(speed * direction, linear_velocity.y)
+	linear_velocity = velocity
+
+
 
 func _physics_process(delta):
 	if is_alive:
@@ -33,7 +37,7 @@ func _physics_process(delta):
 		check_ground()
 		check_death()
 
-func patrol(delta):
+
 	var velocity = Vector2(speed * direction, linear_velocity.y)
 	linear_velocity = velocity
 	
@@ -70,5 +74,7 @@ func _on_Player_body_entered(body):
 		emit_signal("Player_detected", body)
 func _on_Player_body_exited(body):
 	if body.name == "Player": emit_signal("Player_left")
+	
+
 
 
