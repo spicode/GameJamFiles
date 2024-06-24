@@ -12,7 +12,7 @@
 [ext_resource type="Script" path="res://objects(like_player)/stayinplace.gd" id="10_wsv7n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j8u75"]
-size = Vector2(17.9693, 20.7906)
+size = Vector2(16.2261, 18.4691)
 
 [node name="main" type="Sprite2D"]
 position = Vector2(464, 317)
@@ -21,14 +21,14 @@ position = Vector2(464, 317)
 position = Vector2(120, 6)
 scale = Vector2(1.18359, 1.18576)
 texture = ExtResource("1_xwxim")
-script = ExtResource("10_wsv7n")
 
 [node name="Area2D" type="Area2D" parent="backgound"]
 position = Vector2(-101.386, -5.06009)
 scale = Vector2(0.844887, 0.843341)
+script = ExtResource("10_wsv7n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgound/Area2D"]
-position = Vector2(121.5, 10.5917)
+position = Vector2(114.499, 1.50003)
 scale = Vector2(68.8396, 34.3817)
 shape = SubResource("RectangleShape2D_j8u75")
 
