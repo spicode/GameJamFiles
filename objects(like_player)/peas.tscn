@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://cdx1a1fs0jmg1"]
+[gd_scene load_steps=4 format=3 uid="uid://cdx1a1fs0jmg1"]
 
 [ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="1_5ll00"]
 [ext_resource type="Texture2D" uid="uid://sn3neoe1gnkh" path="res://art/ingrediants/PEAS INGREDIENTS.png" id="1_ycvls"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dcv0e"]
+size = Vector2(15, 6.66667)
 
 [node name="Peas" type="Sprite2D"]
 scale = Vector2(3, 3)
@@ -10,3 +13,7 @@ offset = Vector2(-6.987, 1.667)
 region_enabled = true
 region_rect = Rect2(32.2952, 25.4586, 15.6751, 7.56731)
 script = ExtResource("1_5ll00")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-7.5, 1.33333)
+shape = SubResource("RectangleShape2D_dcv0e")
