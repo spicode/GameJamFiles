@@ -4,7 +4,7 @@ extends CharacterBody2D
 var speed = 200.0
 var jump_force = -300.0  # Negative value for upward force
 var gravity = 800.0
-
+@onready var _animated_sprite = $AnimatedSprite2D
 # State
 var is_on_ground = false
 
@@ -23,9 +23,9 @@ func _physics_process(delta):
 func handle_input(delta):
 	var input_vector = Vector2.ZERO
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
-
+	
 	velocity.x = input_vector.x * speed
-
+	_animated_sprite.play("run")
 	if is_on_floor() and Input.is_action_pressed("ui_up"):
 		jump()
 
