@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://bb2oldp4xtxnw"]
+[gd_scene load_steps=6 format=3 uid="uid://bb2oldp4xtxnw"]
 
+[ext_resource type="Texture2D" uid="uid://b08ncrkjgfiwy" path="res://art/LIBRESPRITE KITCHEN BACKGROUNG N2 (1).png" id="1_xwxim"]
 [ext_resource type="PackedScene" uid="uid://b43j02bu2c86u" path="res://hands.tscn" id="3_vy4t0"]
 [ext_resource type="PackedScene" uid="uid://dmo8yodnbrcmy" path="res://objects(like_player)/carrot.tscn" id="5_hhar0"]
 [ext_resource type="PackedScene" uid="uid://cdx1a1fs0jmg1" path="res://objects(like_player)/peas.tscn" id="5_lf6gv"]
@@ -7,6 +8,11 @@
 
 [node name="egg object" type="Sprite2D"]
 position = Vector2(464, 317)
+
+[node name="backgound" type="Sprite2D" parent="."]
+position = Vector2(120, 6)
+scale = Vector2(1.18359, 1.18576)
+texture = ExtResource("1_xwxim")
 
 [node name="Peas" parent="." instance=ExtResource("5_lf6gv")]
 position = Vector2(-257, -145)
