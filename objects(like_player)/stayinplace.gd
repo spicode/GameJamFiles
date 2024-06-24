@@ -16,3 +16,4 @@ func _process(delta):
 func _on_area_2d_body_exited(body):
 	if is_in_group("foods"):
 		Global.is_out_of_bounds = true
+		print("out of bounds")

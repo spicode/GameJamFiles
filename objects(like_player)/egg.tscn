@@ -1,7 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://ciu37cjr2i65r"]
+[gd_scene load_steps=3 format=3 uid="uid://ciu37cjr2i65r"]
 
 [ext_resource type="Texture2D" uid="uid://dkosqv1jungdi" path="res://art/ingrediants/EGG.png" id="1_mabxm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dngt8"]
 
 [node name="Egg" type="Sprite2D"]
 position = Vector2(-128, -273)
 texture = ExtResource("1_mabxm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_dngt8")
