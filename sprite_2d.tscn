@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d220w4pnupsyd"]
+
+[ext_resource type="Texture2D" uid="uid://bpbky4shu08ad" path="res://art/ingrediants/flour ingredient.png" id="1_trx3i"]
+[ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="2_hbpj1"]
+
+[node name="flour" type="Sprite2D"]
+scale = Vector2(3, 3)
+texture = ExtResource("1_trx3i")
+region_enabled = true
+region_rect = Rect2(34.2971, 32.203, 14.0536, 16.2157)
+script = ExtResource("2_hbpj1")

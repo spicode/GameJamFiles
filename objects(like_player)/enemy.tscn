@@ -40,6 +40,7 @@ radius = 1.0
 height = 4.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_p4tol"]
+radius = 15.027
 
 [node name="enemy" type="CharacterBody2D"]
 scale = Vector2(10, 10)

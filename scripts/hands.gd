@@ -13,5 +13,8 @@ func _process(delta):
 	global_position = mouse_position
 	if Global.is_dragging:
 		$Sprite2D.texture = load("res://art/HANDS 1 HOLDING.png")
+	elif Global.is_Mixing:
+		$Sprite2D.texture = load("res://art/HANDS 3 STIRRING W SPOON.png")
 	else:
 		$Sprite2D.texture = load("res://art/HANDS 2 DEFAULT.png")
+	
