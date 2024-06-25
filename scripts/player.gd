@@ -10,16 +10,20 @@ var is_on_ground = false
 
 func _ready():
 	add_to_group("Player")
-
+	
+	
 func _physics_process(delta):
 	handle_input(delta)
-
+	
 	# Apply gravity
 	if not is_on_floor():
 		velocity.y += gravity * delta
 
 	move_and_slide()
-
+	if velocity.x < 0: 
+		$AnimatedSprite2D.flip_h = true
+	else:
+		$AnimatedSprite2D.flip_h =false
 func handle_input(delta):
 	var input_vector = Vector2.ZERO
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
