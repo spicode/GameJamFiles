@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://m3d7tro7px8j"]
 
 [ext_resource type="Texture2D" uid="uid://cejlr0vh3w20h" path="res://art/ingrediants/salt.png" id="1_yx81q"]
-[ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="2_qro4a"]
+[ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="2_137i1"]
 
 [node name="salt" type="Sprite2D"]
 position = Vector2(-6, 7)
 texture = ExtResource("1_yx81q")
 region_enabled = true
 region_rect = Rect2(34.162, 16.2576, 9.59427, 14.7292)
-script = ExtResource("2_qro4a")
+script = ExtResource("2_137i1")

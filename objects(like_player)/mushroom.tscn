@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwfoc2jvq01lt"]
+
+[ext_resource type="Texture2D" uid="uid://c36xs4wyc0lir" path="res://art/ingrediants/MUSHROOMS INGREDIENTS.png" id="1_koba5"]
+[ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="2_lnlkd"]
+
+[node name="Mushroom" type="Sprite2D"]
+texture = ExtResource("1_koba5")
+region_enabled = true
+region_rect = Rect2(51.4847, 21.9181, 10.4051, 8.64835)
+script = ExtResource("2_lnlkd")
