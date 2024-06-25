@@ -63,11 +63,14 @@ scale = Vector2(3, 3)
 position = Vector2(91, -79)
 scale = Vector2(3, 3)
 
+[node name="hands" parent="." instance=ExtResource("3_vy4t0")]
+position = Vector2(242, -33)
+
 [node name="SauceBowl" parent="." instance=ExtResource("12_v0opa")]
 script = ExtResource("13_b8cnf")
 
-[node name="hands" parent="." instance=ExtResource("3_vy4t0")]
-position = Vector2(242, -33)
+[node name="Area2D" type="Area2D" parent="SauceBowl"]
+position = Vector2(241, 157)
 
 [node name="Onion" type="Sprite2D" parent="."]
 
