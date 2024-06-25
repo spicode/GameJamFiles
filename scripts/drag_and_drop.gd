@@ -26,5 +26,4 @@ func _input(event):
 
 
 func _on_area_2d_enterd(area):
-	if body.is_in_group("screen"):
-		queue_free()
+	
