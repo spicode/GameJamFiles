@@ -3,4 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://8qngobc0d26d" path="res://art/ingrediants/LASANGA LAYERS INGREDIENTS.png" id="1_40r06"]
 
 [node name="lasagna layers" type="Sprite2D"]
+scale = Vector2(3, 3)
 texture = ExtResource("1_40r06")
+region_enabled = true
+region_rect = Rect2(49.1614, 34.7705, 13.2428, 10.6753)
