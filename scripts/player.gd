@@ -27,7 +27,7 @@ func _physics_process(delta):
 		$AnimatedSprite2D.flip_h =false
 	if velocity.x == 0:
 		_animated_sprite.play("idle")
-		print("yes")
+		
 		
 func handle_input(delta):
 	var input_vector = Vector2.ZERO

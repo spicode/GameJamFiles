@@ -1,4 +1,4 @@
-extends Sprite2D
+extends AnimatedSprite2D
 
 var mouse_offset #center mouse on click
 var delay = .2
