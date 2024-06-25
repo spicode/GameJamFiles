@@ -4,5 +4,6 @@
 [ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="2_qro4a"]
 
 [node name="water" type="Sprite2D"]
+position = Vector2(-6, 7)
 texture = ExtResource("1_t4vd2")
 script = ExtResource("2_qro4a")

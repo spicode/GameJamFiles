@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bb2oldp4xtxnw"]
+[gd_scene load_steps=14 format=3 uid="uid://bb2oldp4xtxnw"]
 
 [ext_resource type="Texture2D" uid="uid://b08ncrkjgfiwy" path="res://art/LIBRESPRITE KITCHEN BACKGROUNG N2 (1).png" id="1_xwxim"]
 [ext_resource type="PackedScene" uid="uid://b43j02bu2c86u" path="res://hands.tscn" id="3_vy4t0"]
@@ -9,7 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://d220w4pnupsyd" path="res://sprite_2d.tscn" id="7_40rv6"]
 [ext_resource type="PackedScene" uid="uid://ciu37cjr2i65r" path="res://objects(like_player)/egg.tscn" id="8_3b7vb"]
 [ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="8_bfjjp"]
+[ext_resource type="PackedScene" uid="uid://bigx3a63177d3" path="res://lasagna_layers.tscn" id="10_04xdt"]
 [ext_resource type="Script" path="res://objects(like_player)/stayinplace.gd" id="10_wsv7n"]
+[ext_resource type="PackedScene" uid="uid://m3d7tro7px8j" path="res://water.tscn" id="11_vym64"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j8u75"]
 size = Vector2(17.9693, 20.7906)
@@ -50,6 +52,12 @@ position = Vector2(284, -174)
 script = ExtResource("8_bfjjp")
 
 [node name="SauceBall" parent="." instance=ExtResource("6_xf6h4")]
+
+[node name="lasagna layers" parent="." instance=ExtResource("10_04xdt")]
+position = Vector2(109, -43)
+script = ExtResource("8_bfjjp")
+
+[node name="water" parent="." instance=ExtResource("11_vym64")]
 
 [node name="hands" parent="." instance=ExtResource("3_vy4t0")]
 position = Vector2(82, 36)
