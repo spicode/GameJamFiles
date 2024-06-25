@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bigx3a63177d3"]
+
+[ext_resource type="Texture2D" uid="uid://8qngobc0d26d" path="res://art/ingrediants/LASANGA LAYERS INGREDIENTS.png" id="1_40r06"]
+
+[node name="lasagna layers" type="Sprite2D"]
+texture = ExtResource("1_40r06")
