@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crfsmvk17421f"
-path="res://.godot/imported/idolposeloopanimation-ezgif.com-gif-to-sprite-converter.png-5c0c3c46e8936a0ce6807bb3e386b98d.ctex"
+uid="uid://sgct0ug1kyor"
+path="res://.godot/imported/firewalking-ezgif.com-gif-to-sprite-converter.png-940177cbe2d358f59204a0e5deef99b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://objects(like_player)/idolposeloopanimation-ezgif.com-gif-to-sprite-converter.png"
-dest_files=["res://.godot/imported/idolposeloopanimation-ezgif.com-gif-to-sprite-converter.png-5c0c3c46e8936a0ce6807bb3e386b98d.ctex"]
+source_file="res://art/firewalking-ezgif.com-gif-to-sprite-converter.png"
+dest_files=["res://.godot/imported/firewalking-ezgif.com-gif-to-sprite-converter.png-940177cbe2d358f59204a0e5deef99b0.ctex"]
 
 [params]
 

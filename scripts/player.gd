@@ -37,7 +37,8 @@ func handle_input(delta):
 	
 	_animated_sprite.play("run")
 	if is_on_floor() and Input.is_action_pressed("ui_up"):
-		_animated_sprite.play("jump")
+		$AnimatedSprite2D.play("jump")
+		print("jump")
 		jump()
 
 	
