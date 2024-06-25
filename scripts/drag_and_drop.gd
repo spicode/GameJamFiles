@@ -23,3 +23,8 @@ func _input(event):
 		else:
 			is_dragging = false
 			Global.is_dragging = false
+
+
+func _on_area_2d_enterd(area):
+	if body.is_in_group("screen"):
+		queue_free()

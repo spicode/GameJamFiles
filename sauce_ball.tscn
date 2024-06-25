@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6u8nmdmrr4ug"]
+[gd_scene load_steps=3 format=3 uid="uid://dvbdshruf3oqk"]
 
 [ext_resource type="Texture2D" uid="uid://oclun00klvuv" path="res://art/דשוSAUCE 1.png" id="1_uc4f4"]
 [ext_resource type="Script" path="res://sauce_ball.gd" id="2_mtxpk"]
