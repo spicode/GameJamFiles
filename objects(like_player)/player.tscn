@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://lxc3fx3wwegb"]
+[gd_scene load_steps=22 format=3 uid="uid://lxc3fx3wwegb"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_gotet"]
+[ext_resource type="Texture2D" uid="uid://crfsmvk17421f" path="res://objects(like_player)/idolposeloopanimation-ezgif.com-gif-to-sprite-converter.png" id="2_c0vjd"]
 [ext_resource type="Texture2D" uid="uid://bv1a842xuhrsj" path="res://art/Sprite-0003OLDLADYRUNNING-ezgif.com-gif-to-sprite-converter.png" id="2_pshpo"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xv8l0"]
@@ -9,6 +10,38 @@ height = 26.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5t6uf"]
 height = 22.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c1mt4"]
+atlas = ExtResource("2_c0vjd")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l5rax"]
+atlas = ExtResource("2_c0vjd")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m3apm"]
+atlas = ExtResource("2_c0vjd")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ywn64"]
+atlas = ExtResource("2_c0vjd")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmmxl"]
+atlas = ExtResource("2_c0vjd")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dbek"]
+atlas = ExtResource("2_c0vjd")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3u45g"]
+atlas = ExtResource("2_c0vjd")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rtvka"]
+atlas = ExtResource("2_c0vjd")
+region = Rect2(448, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dwo3h"]
 atlas = ExtResource("2_pshpo")
@@ -40,6 +73,35 @@ region = Rect2(0, 384, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nhwux"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c1mt4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l5rax")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m3apm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ywn64")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cmmxl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7dbek")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3u45g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rtvka")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_dwo3h")
@@ -87,6 +149,6 @@ shape = SubResource("CapsuleShape2D_5t6uf")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-3, 0)
 sprite_frames = SubResource("SpriteFrames_nhwux")
-animation = &"run"
+animation = &"idle"
 
 [connection signal="body_entered" from="hitbox" to="." method="_on_area_2d_body_entered"]

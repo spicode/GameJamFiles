@@ -1,7 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://bb2oldp4xtxnw"]
+[gd_scene load_steps=15 format=3 uid="uid://bb2oldp4xtxnw"]
 
 [ext_resource type="Texture2D" uid="uid://b08ncrkjgfiwy" path="res://art/LIBRESPRITE KITCHEN BACKGROUNG N2 (1).png" id="1_xwxim"]
-[ext_resource type="PackedScene" path="res://hands.tscn" id="3_vy4t0"]
+[ext_resource type="PackedScene" uid="uid://b43j02bu2c86u" path="res://hands.tscn" id="3_vy4t0"]
 [ext_resource type="PackedScene" uid="uid://dmo8yodnbrcmy" path="res://objects(like_player)/carrot.tscn" id="5_hhar0"]
 [ext_resource type="PackedScene" uid="uid://cdx1a1fs0jmg1" path="res://objects(like_player)/peas.tscn" id="5_lf6gv"]
 [ext_resource type="PackedScene" uid="uid://byn7pabfelh75" path="res://objects(like_player)/brocoli.tscn" id="6_ayrig"]
@@ -13,7 +13,6 @@
 [ext_resource type="PackedScene" uid="uid://m3d7tro7px8j" path="res://salt.tscn" id="11_vym64"]
 [ext_resource type="PackedScene" uid="uid://cpsterdq6puv5" path="res://objects(like_player)/water.tscn" id="12_trbff"]
 [ext_resource type="PackedScene" uid="uid://dwfxg67j3odt5" path="res://objects(like_player)/sauce_bowl.tscn" id="12_v0opa"]
-[ext_resource type="Script" path="res://sauce_ball.gd" id="13_b8cnf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j8u75"]
 size = Vector2(16.9143, 17.9224)
@@ -67,7 +66,6 @@ scale = Vector2(3, 3)
 position = Vector2(242, -33)
 
 [node name="SauceBowl" parent="." instance=ExtResource("12_v0opa")]
-script = ExtResource("13_b8cnf")
 
 [node name="Area2D" type="Area2D" parent="SauceBowl"]
 position = Vector2(241, 157)
