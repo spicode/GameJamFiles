@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://dvbdshruf3oqk"]
 
-[ext_resource type="Texture2D" uid="uid://oclun00klvuv" path="res://art/דשוSAUCE 1.png" id="1_uc4f4"]
+[ext_resource type="Texture2D" uid="uid://oclun00klvuv" path="res://art/SauceAnimation/דשוSAUCE 1.png" id="1_dkh04"]
 [ext_resource type="Script" path="res://sauce_ball.gd" id="2_mtxpk"]
 
 [node name="SauceBall" type="Sprite2D"]
 scale = Vector2(2, 2)
-texture = ExtResource("1_uc4f4")
+texture = ExtResource("1_dkh04")
 region_enabled = true
 region_rect = Rect2(3.58255, 19.6794, 59.7131, 26.4392)
 script = ExtResource("2_mtxpk")

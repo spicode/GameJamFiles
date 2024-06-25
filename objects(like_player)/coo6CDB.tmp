@@ -5,15 +5,15 @@
 [ext_resource type="PackedScene" uid="uid://dmo8yodnbrcmy" path="res://objects(like_player)/carrot.tscn" id="5_hhar0"]
 [ext_resource type="PackedScene" uid="uid://cdx1a1fs0jmg1" path="res://objects(like_player)/peas.tscn" id="5_lf6gv"]
 [ext_resource type="PackedScene" uid="uid://byn7pabfelh75" path="res://objects(like_player)/brocoli.tscn" id="6_ayrig"]
+[ext_resource type="PackedScene" uid="uid://dvbdshruf3oqk" path="res://sauce_ball.tscn" id="6_xf6h4"]
 [ext_resource type="PackedScene" uid="uid://d220w4pnupsyd" path="res://sprite_2d.tscn" id="7_40rv6"]
 [ext_resource type="PackedScene" uid="uid://ciu37cjr2i65r" path="res://objects(like_player)/egg.tscn" id="8_3b7vb"]
 [ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="8_bfjjp"]
-[ext_resource type="PackedScene" path="res://lasagna_layers.tscn" id="10_04xdt"]
+[ext_resource type="PackedScene" uid="uid://bigx3a63177d3" path="res://lasagna_layers.tscn" id="10_04xdt"]
 [ext_resource type="Script" path="res://objects(like_player)/stayinplace.gd" id="10_wsv7n"]
 [ext_resource type="PackedScene" uid="uid://m3d7tro7px8j" path="res://salt.tscn" id="11_vym64"]
 [ext_resource type="PackedScene" uid="uid://cpsterdq6puv5" path="res://objects(like_player)/water.tscn" id="12_trbff"]
-[ext_resource type="PackedScene" uid="uid://dwfxg67j3odt5" path="res://objects(like_player)/sauce_bowl.tscn" id="12_v0opa"]
-[ext_resource type="Script" path="res://sauce_ball.gd" id="13_b8cnf"]
+[ext_resource type="Texture2D" uid="uid://db78idwaix0k7" path="res://art/ingrediants/water ingredient (2).png" id="13_6xys2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j8u75"]
 size = Vector2(16.9143, 17.9224)
@@ -52,26 +52,19 @@ position = Vector2(313, -272)
 position = Vector2(284, -174)
 script = ExtResource("8_bfjjp")
 
+[node name="SauceBall" parent="." instance=ExtResource("6_xf6h4")]
+
 [node name="lasagna layers" parent="." instance=ExtResource("10_04xdt")]
 position = Vector2(109, -43)
 script = ExtResource("8_bfjjp")
 
 [node name="salt" parent="." instance=ExtResource("11_vym64")]
-scale = Vector2(3, 3)
 
 [node name="water" parent="." instance=ExtResource("12_trbff")]
-position = Vector2(91, -79)
-scale = Vector2(3, 3)
-
-[node name="SauceBowl" parent="." instance=ExtResource("12_v0opa")]
-script = ExtResource("13_b8cnf")
+texture = ExtResource("13_6xys2")
 
 [node name="hands" parent="." instance=ExtResource("3_vy4t0")]
 position = Vector2(242, -33)
-
-[node name="Onion" type="Sprite2D" parent="."]
-
-[node name="Mushroom" type="Sprite2D" parent="."]
 
 [connection signal="area_exited" from="backgound/Area2D" to="backgound/Area2D" method="_on_area_exited"]
 [connection signal="body_exited" from="backgound/Area2D" to="backgound" method="_on_area_2d_body_exited"]

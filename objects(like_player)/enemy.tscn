@@ -1,6 +1,6 @@
-[gd_scene load_steps=18 format=3 uid="uid://cainv4ov4u6o8"]
+[gd_scene load_steps=5 format=3 uid="uid://cainv4ov4u6o8"]
 
-[ext_resource type="Texture2D" path="res://art/headofthefire-ezgif.com-gif-to-sprite-converter.png" id="1_rhpvq"]
+[ext_resource type="Texture2D" uid="uid://dkosqv1jungdi" path="res://art/ingrediants/EGG.png" id="1_2l64e"]
 
 [sub_resource type="GDScript" id="GDScript_l0t25"]
 script/source = "extends CharacterBody2D
@@ -21,7 +21,8 @@ var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
 func _physics_process(delta):
 	if playerChase:
 		position.x += (player.position.x - position.x)/SPEED
-
+	if not is_on_floor():
+		velocity.y += gravity * delta
 
 
 func _on_detection_area_body_entered(body):
@@ -35,111 +36,18 @@ func _on_detection_area_body_exited(body):
 	playerChase = false
 "
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_sucy3"]
-size = Vector2(477.6, 306.5)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6rukc"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xa2oy"]
-size = Vector2(127.5, 305.45)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dgwau"]
-atlas = ExtResource("1_rhpvq")
-region = Rect2(0, 41, 576, 1020)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_aq5bt"]
-atlas = ExtResource("1_rhpvq")
-region = Rect2(0, 1061, 576, 1020)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jleaf"]
-atlas = ExtResource("1_rhpvq")
-region = Rect2(0, 2081, 576, 1020)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fuv8n"]
-atlas = ExtResource("1_rhpvq")
-region = Rect2(0, 3101, 576, 1020)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_evdef"]
-atlas = ExtResource("1_rhpvq")
-region = Rect2(0, 4121, 576, 1020)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ob1jp"]
-atlas = ExtResource("1_rhpvq")
-region = Rect2(0, 5141, 576, 1020)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xn2cy"]
-atlas = ExtResource("1_rhpvq")
-region = Rect2(0, 6161, 576, 1020)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_00w67"]
-atlas = ExtResource("1_rhpvq")
-region = Rect2(0, 7181, 576, 1020)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qm55a"]
-atlas = ExtResource("1_rhpvq")
-region = Rect2(0, 8201, 576, 1020)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1ptje"]
-atlas = ExtResource("1_rhpvq")
-region = Rect2(0, 9221, 576, 1020)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3yctn"]
-atlas = ExtResource("1_rhpvq")
-region = Rect2(0, 10241, 576, 1020)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_echm6"]
-atlas = ExtResource("1_rhpvq")
-region = Rect2(0, 11261, 576, 1020)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_xjt5s"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dgwau")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_aq5bt")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jleaf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fuv8n")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_evdef")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ob1jp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xn2cy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_00w67")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qm55a")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1ptje")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3yctn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_echm6")
-}],
-"loop": true,
-"name": &"default",
-"speed": 21.0
-}]
+[sub_resource type="CircleShape2D" id="CircleShape2D_tc6pl"]
+radius = 121.15
 
 [node name="enemy" type="CharacterBody2D"]
 scale = Vector2(10, 10)
 script = SubResource("GDScript_l0t25")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.599963, 180.9)
-shape = SubResource("RectangleShape2D_sucy3")
+position = Vector2(5.96046e-08, 8.39999)
+shape = SubResource("CapsuleShape2D_6rukc")
 
 [node name="detectionArea" type="Area2D" parent="."]
 position = Vector2(-1, -0.3)
@@ -147,15 +55,12 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="detectionArea"]
-position = Vector2(176.2, 182.925)
-shape = SubResource("RectangleShape2D_xa2oy")
+position = Vector2(3.7, 5.30001)
+shape = SubResource("CircleShape2D_tc6pl")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(161, 187.8)
-rotation = 1.5708
-scale = Vector2(0.574765, 0.844919)
-sprite_frames = SubResource("SpriteFrames_xjt5s")
-frame_progress = 0.635261
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.985, 0.985)
+texture = ExtResource("1_2l64e")
 
 [connection signal="body_entered" from="detectionArea" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="detectionArea" to="." method="_on_detection_area_body_exited"]
