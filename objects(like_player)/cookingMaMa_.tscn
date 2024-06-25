@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bb2oldp4xtxnw"]
+[gd_scene load_steps=16 format=3 uid="uid://bb2oldp4xtxnw"]
 
 [ext_resource type="Texture2D" uid="uid://b08ncrkjgfiwy" path="res://art/LIBRESPRITE KITCHEN BACKGROUNG N2 (1).png" id="1_xwxim"]
 [ext_resource type="PackedScene" uid="uid://b43j02bu2c86u" path="res://hands.tscn" id="3_vy4t0"]
@@ -12,53 +12,11 @@
 [ext_resource type="Script" path="res://objects(like_player)/stayinplace.gd" id="10_wsv7n"]
 [ext_resource type="PackedScene" uid="uid://m3d7tro7px8j" path="res://salt.tscn" id="11_vym64"]
 [ext_resource type="PackedScene" uid="uid://cpsterdq6puv5" path="res://objects(like_player)/water.tscn" id="12_trbff"]
-[ext_resource type="Texture2D" uid="uid://oclun00klvuv" path="res://art/SauceAnimation/דשוSAUCE 1.png" id="12_vb3l5"]
-[ext_resource type="Texture2D" uid="uid://0ck8mn0xklex" path="res://art/SauceAnimation/דשוSAUCE 2.png" id="13_6puk1"]
-[ext_resource type="Texture2D" uid="uid://cr6aoni8gulpr" path="res://art/SauceAnimation/דשוSAUCE 3.png" id="14_hgwl6"]
-[ext_resource type="Texture2D" uid="uid://bmevyi5b58jmt" path="res://art/SauceAnimation/דשוSAUCE 4.png" id="15_eh8lb"]
-[ext_resource type="Texture2D" uid="uid://dg3gmi26emln0" path="res://art/SauceAnimation/דשוSAUCE 5.png" id="16_8y7bi"]
-[ext_resource type="Texture2D" uid="uid://bpwpts45hwtgx" path="res://art/SauceAnimation/דשוSAUCE 6.png" id="17_wlyov"]
-[ext_resource type="Texture2D" uid="uid://bla8qh1ibarmm" path="res://art/SauceAnimation/דשוSAUCE 7.png" id="18_ff56l"]
-[ext_resource type="Texture2D" uid="uid://c0e8v10jhlt5q" path="res://art/SauceAnimation/דשוSAUCE 8.png" id="19_30gl5"]
-[ext_resource type="Texture2D" uid="uid://fjv7vjys7jed" path="res://art/SauceAnimation/דשוSAUCE 9.png" id="20_oflfa"]
+[ext_resource type="PackedScene" uid="uid://dwfxg67j3odt5" path="res://objects(like_player)/sauce_bowl.tscn" id="12_v0opa"]
+[ext_resource type="Script" path="res://sauce_ball.gd" id="13_b8cnf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j8u75"]
 size = Vector2(16.9143, 17.9224)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_mwtig"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("12_vb3l5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_6puk1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_hgwl6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_eh8lb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_8y7bi")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_wlyov")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_ff56l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_30gl5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_oflfa")
-}],
-"loop": true,
-"name": &"default",
-"speed": 6.0
-}]
 
 [node name="main" type="Sprite2D"]
 position = Vector2(464, 317)
@@ -105,14 +63,15 @@ scale = Vector2(3, 3)
 position = Vector2(91, -79)
 scale = Vector2(3, 3)
 
-[node name="SauceBowl" type="AnimatedSprite2D" parent="."]
-position = Vector2(-78, -57)
-sprite_frames = SubResource("SpriteFrames_mwtig")
-frame = 8
-frame_progress = 0.73578
+[node name="SauceBowl" parent="." instance=ExtResource("12_v0opa")]
+script = ExtResource("13_b8cnf")
 
 [node name="hands" parent="." instance=ExtResource("3_vy4t0")]
 position = Vector2(242, -33)
+
+[node name="Onion" type="Sprite2D" parent="."]
+
+[node name="Mushroom" type="Sprite2D" parent="."]
 
 [connection signal="area_exited" from="backgound/Area2D" to="backgound/Area2D" method="_on_area_exited"]
 [connection signal="body_exited" from="backgound/Area2D" to="backgound" method="_on_area_2d_body_exited"]
