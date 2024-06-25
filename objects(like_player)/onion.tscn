@@ -3,8 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://d0gcrtcrkjn1j" path="res://art/ingrediants/ONION INGREDIENTS.png" id="1_0jm2v"]
 
 [node name="onion" type="Sprite2D"]
-position = Vector2(1, 0)
-scale = Vector2(3.00463, 3)
+position = Vector2(71, -27)
+scale = Vector2(3, 3)
 texture = ExtResource("1_0jm2v")
-region_enabled = true
-region_rect = Rect2(1.59436, 34.3651, 13.3779, 12.5671)
