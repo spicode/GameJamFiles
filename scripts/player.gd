@@ -27,7 +27,7 @@ func _physics_process(delta):
 		$AnimatedSprite2D.flip_h =false
 	if velocity.x == 0:
 		_animated_sprite.play("idle")
-		print("yes")
+		
 		
 func handle_input(delta):
 	var input_vector = Vector2.ZERO
@@ -37,7 +37,6 @@ func handle_input(delta):
 	
 	_animated_sprite.play("run")
 	if is_on_floor() and Input.is_action_pressed("ui_up"):
-		_animated_sprite.play("jump")
 		jump()
 
 	
@@ -49,7 +48,8 @@ func handle_input(delta):
 func jump():
 	if is_on_floor():
 		velocity.y = jump_force 
-		
+		_animated_sprite.play("jump")
+		print("jump")
 func _on_Foot_area_entered(area):
 	is_on_ground = true
 
