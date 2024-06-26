@@ -9,10 +9,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-
-
-
-
 func _on_area_2d_body_exited(body):
 	if is_in_group("foods"):
 		Global.is_out_of_bounds = true

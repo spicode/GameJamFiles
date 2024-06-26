@@ -6,8 +6,8 @@
 script/source = "extends CharacterBody2D
 
 var rng = RandomNumberGenerator.new()
-var walking_timer = Timer.new()
-
+var walking_timer1 := Timer.new()
+var walking_timer2 := Timer.new()
 
 var SPEED = 48
 var playerChase = false
@@ -17,26 +17,25 @@ const JUMP_VELOCITY = -400.0
 func _ready():
 	add_to_group(\"enemy\")
 	_animated_sprite.play(\"run\")
-	walking_timer = $Timer
-
+	
+	walking_timer1.one_shot = true
+	walking_timer2.one_shot = true
+	walking_timer1.autostart=false
+	walking_timer2.autostart =false
+	add_child(walking_timer1)
+	add_child(walking_timer2)
 	
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
 
 
 func _physics_process(delta):
-	if velocity.x > 25:
-		walking_timer.stop
+	print(playerChase)
 	if playerChase:
-		
 		position.x += (player.position.x - position.x)/SPEED
-		velocity.x = (player.position.x - position.x)/20000
 	else:
-		
-		if walking_timer.time_left == 0:
-			
-			notChasingPlayer()
-			
+		notChasingPlayer()
+	
 	if not is_on_floor():
 		velocity.y += gravity * delta
 	if velocity.x < 0: 
@@ -48,23 +47,24 @@ func _physics_process(delta):
 func _on_detection_area_body_entered(body):
 	player = body
 	playerChase = true
+	
 
 
 func _on_detection_area_body_exited(body):
 	player = null
 	playerChase = false
-
-func notChasingPlayer():
-	
-	velocity.x += rng.randf_range(-25,25)
-	walking_timer.start(rng.randf_range(2,5))
-	
-	
+func notChasingPlayer()
+	walking_timer1.start(3)
+	velocity.x += rng.randf_range(5,10)/SPEED
+	if walking_timer1.is_stopped():
+		walking_timer2.start(3)
+		velocity.x -= rng.randf_range(5,10)/SPEED
+		if walking_timer2.is_stopped():
+			notChasingPlayer()
 "
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6rukc"]
-radius = 5.7
-height = 35.2838
+radius = 4.7
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tc6pl"]
 radius = 90.4108
@@ -164,10 +164,6 @@ animations = [{
 [node name="enemy" type="CharacterBody2D"]
 scale = Vector2(10, 10)
 script = SubResource("GDScript_l0t25")
-
-[node name="Timer" type="Timer" parent="."]
-process_callback = 0
-one_shot = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(5.96046e-08, 8.39999)

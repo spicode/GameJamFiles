@@ -232,7 +232,7 @@ shape = SubResource("CapsuleShape2D_5t6uf")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-3, 0)
 sprite_frames = SubResource("SpriteFrames_nhwux")
-animation = &"idle"
-frame_progress = 0.0973795
+animation = &"jump"
+frame_progress = 0.988734
 
 [connection signal="body_entered" from="hitbox" to="." method="_on_area_2d_body_entered"]

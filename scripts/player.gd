@@ -25,10 +25,15 @@ func _physics_process(delta):
 		$AnimatedSprite2D.flip_h = true
 	else:
 		$AnimatedSprite2D.flip_h =false
-	if velocity.x == 0:
+	if not velocity.x == 0:
+		_animated_sprite.play("run")
+	elif velocity.y == 0:
 		_animated_sprite.play("idle")
-		
-		
+	if is_on_floor() and Input.is_action_pressed("ui_up"):
+		_animated_sprite.stop()
+		jump()
+	if not velocity.y == 0:
+		jump()
 func handle_input(delta):
 	var input_vector = Vector2.ZERO
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
@@ -36,25 +41,19 @@ func handle_input(delta):
 	velocity.x = input_vector.x * speed
 	
 	_animated_sprite.play("run")
-	if is_on_floor() and Input.is_action_pressed("ui_up"):
-		jump()
-
-	
-	
-	
-		
-		
 
 func jump():
 	if is_on_floor():
 		velocity.y = jump_force 
+		
 		_animated_sprite.play("jump")
-		print("jump")
+		print(_animated_sprite.get_animation())
 func _on_Foot_area_entered(area):
 	is_on_ground = true
 
 func _on_Foot_area_exited(area):
 	is_on_ground = false
+	
 	_animated_sprite.play("jump")
 
 

@@ -1,6 +1,6 @@
 extends AnimatedSprite2D
 
-var mouse_offset = Vector2(0,0) #center mouse on click
+var mouse_offset = Vector2(0,0) 
 var delay = .2
 var drop_spots
 
