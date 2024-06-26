@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=3 uid="uid://bb2oldp4xtxnw"]
 
 [ext_resource type="Texture2D" uid="uid://b08ncrkjgfiwy" path="res://art/LIBRESPRITE KITCHEN BACKGROUNG N2 (1).png" id="1_xwxim"]
-[ext_resource type="PackedScene" uid="uid://b43j02bu2c86u" path="res://hands.tscn" id="3_vy4t0"]
+[ext_resource type="PackedScene" path="res://hands.tscn" id="3_vy4t0"]
 [ext_resource type="PackedScene" uid="uid://dmo8yodnbrcmy" path="res://objects(like_player)/carrot.tscn" id="5_hhar0"]
 [ext_resource type="PackedScene" uid="uid://cdx1a1fs0jmg1" path="res://objects(like_player)/peas.tscn" id="5_lf6gv"]
 [ext_resource type="PackedScene" uid="uid://byn7pabfelh75" path="res://objects(like_player)/brocoli.tscn" id="6_ayrig"]
