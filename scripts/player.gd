@@ -37,8 +37,6 @@ func handle_input(delta):
 	
 	_animated_sprite.play("run")
 	if is_on_floor() and Input.is_action_pressed("ui_up"):
-		$AnimatedSprite2D.play("jump")
-		print("jump")
 		jump()
 
 	
@@ -50,7 +48,8 @@ func handle_input(delta):
 func jump():
 	if is_on_floor():
 		velocity.y = jump_force 
-		
+		_animated_sprite.play("jump")
+		print("jump")
 func _on_Foot_area_entered(area):
 	is_on_ground = true
 

@@ -66,6 +66,7 @@ scale = Vector2(3, 3)
 position = Vector2(242, -33)
 
 [node name="SauceBowl" parent="." instance=ExtResource("12_v0opa")]
+scale = Vector2(1.01351, 0.411609)
 
 [node name="Area2D" type="Area2D" parent="SauceBowl"]
 position = Vector2(241, 157)
