@@ -2,6 +2,8 @@ extends Sprite2D
 var is_dragging = false #state management
 var mouse_offset   #center mouse on click
 var delay = 10
+var drop_spots
+
 func _ready():
 	add_to_group("foods")
 func _physics_process(delta):
@@ -23,6 +25,20 @@ func _input(event):
 		else:
 			is_dragging = false
 			Global.is_dragging = false
+	elif event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		if event.pressed:
+			if get_rect().has_point(to_local(event.position)):
+				print('clicked on sprite')
+				Global.is_Mixing = true
+				mouse_offset = get_global_mouse_position()-global_position
+		else:
+			
+			for drop_spot in drop_spots:
+				if drop_spot.has_overlapping_areas() and drop_spot.get_overlapping_areas().has(self.get_node("Area2D")):
+					var snap_position = drop_spot.position
+					var tween = get_tree().create_tween()
+					tween.tween_property(self, "position", snap_position, delay)
+
 
 
 func _on_area_2d_enterd(area):
