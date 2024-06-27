@@ -30,7 +30,7 @@ func _input(event):
 			if get_rect().has_point(to_local(event.position)):
 				print('clicked on sprite')
 				Global.is_Mixing = true
-				mouse_offset = get_global_mouse_position()-global_position
+				mouse_offset = get_global_mouse_position()-position
 		else:
 			
 			for drop_spot in drop_spots:

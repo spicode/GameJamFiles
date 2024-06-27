@@ -37,12 +37,7 @@ func _input(event):
 				mouse_offset = get_global_mouse_position()-position
 		else:
 			Global.is_Mixing = false
-			for drop_spot in drop_spots:
-				if drop_spot.has_overlapping_areas() and drop_spot.get_overlapping_areas().has(self.get_node("Area2D")):
-					var snap_position = drop_spot.position
-					var tween = get_tree().create_tween()
-					tween.tween_property(self, "position", snap_position, delay)
-
+		
 func is_point_in_sprite(point:Vector2,sprite) -> bool:
 	var texture = sprite.texture
 	var rect = Rect2(Vector2.ZERO, texture.get_size())
