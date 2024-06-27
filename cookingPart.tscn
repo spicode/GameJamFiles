@@ -1,0 +1,68 @@
+[gd_scene load_steps=16 format=3 uid="uid://buy43th1ujst1"]
+
+[ext_resource type="PackedScene" uid="uid://byn7pabfelh75" path="res://objects(like_player)/brocoli.tscn" id="1_h6aca"]
+[ext_resource type="Texture2D" uid="uid://b08ncrkjgfiwy" path="res://art/LIBRESPRITE KITCHEN BACKGROUNG N2 (1).png" id="1_tku8a"]
+[ext_resource type="PackedScene" uid="uid://d4f58llm605ux" path="res://objects(like_player)/cheese.tscn" id="2_6puvp"]
+[ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="3_nbx7t"]
+[ext_resource type="PackedScene" uid="uid://ciu37cjr2i65r" path="res://objects(like_player)/egg.tscn" id="4_5ixck"]
+[ext_resource type="PackedScene" uid="uid://dmo8yodnbrcmy" path="res://objects(like_player)/carrot.tscn" id="5_na3ga"]
+[ext_resource type="PackedScene" uid="uid://bf1d7y40kkm2h" path="res://objects(like_player)/mushroom.tscn" id="6_emvep"]
+[ext_resource type="PackedScene" uid="uid://cdx1a1fs0jmg1" path="res://objects(like_player)/peas.tscn" id="7_r0bfm"]
+[ext_resource type="PackedScene" uid="uid://cpsterdq6puv5" path="res://objects(like_player)/water.tscn" id="8_0sft1"]
+[ext_resource type="PackedScene" uid="uid://d3qvdq7nbcl6o" path="res://objects(like_player)/onion.tscn" id="9_7fog1"]
+[ext_resource type="PackedScene" uid="uid://bigx3a63177d3" path="res://lasagna_layers.tscn" id="10_0hy3h"]
+[ext_resource type="PackedScene" uid="uid://dwfxg67j3odt5" path="res://objects(like_player)/sauce_bowl.tscn" id="11_lqtwk"]
+[ext_resource type="PackedScene" uid="uid://m3d7tro7px8j" path="res://salt.tscn" id="11_u8fww"]
+[ext_resource type="Script" path="res://scripts/sauce_ball.gd" id="12_psedf"]
+[ext_resource type="PackedScene" uid="uid://b43j02bu2c86u" path="res://hands.tscn" id="13_5g2ai"]
+
+[node name="CookingPart" type="Node2D"]
+
+[node name="BackGround" type="Sprite2D" parent="."]
+position = Vector2(638, 351)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("1_tku8a")
+
+[node name="brocoli" parent="." instance=ExtResource("1_h6aca")]
+position = Vector2(691, 140)
+
+[node name="cheese" parent="." instance=ExtResource("2_6puvp")]
+position = Vector2(658, 128)
+script = ExtResource("3_nbx7t")
+
+[node name="Egg" parent="." instance=ExtResource("4_5ixck")]
+position = Vector2(336, 338)
+script = ExtResource("3_nbx7t")
+
+[node name="Carrot" parent="." instance=ExtResource("5_na3ga")]
+position = Vector2(560, 205)
+
+[node name="Mushroom" parent="." instance=ExtResource("6_emvep")]
+position = Vector2(770, 204)
+
+[node name="Peas" parent="." instance=ExtResource("7_r0bfm")]
+position = Vector2(796, 161)
+
+[node name="water" parent="." instance=ExtResource("8_0sft1")]
+position = Vector2(730, 233)
+scale = Vector2(3, 3)
+
+[node name="onion" parent="." instance=ExtResource("9_7fog1")]
+position = Vector2(530, 138)
+script = ExtResource("3_nbx7t")
+
+[node name="salt" parent="." instance=ExtResource("11_u8fww")]
+position = Vector2(758, 297)
+scale = Vector2(3, 3)
+
+[node name="lasagna layers" parent="." instance=ExtResource("10_0hy3h")]
+position = Vector2(932, 308)
+script = ExtResource("3_nbx7t")
+
+[node name="SauceBowl" parent="." instance=ExtResource("11_lqtwk")]
+position = Vector2(329, 149)
+scale = Vector2(3, 3)
+script = ExtResource("12_psedf")
+
+[node name="hands" parent="." instance=ExtResource("13_5g2ai")]
+position = Vector2(572, 302)

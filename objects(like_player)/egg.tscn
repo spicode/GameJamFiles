@@ -7,6 +7,8 @@
 [node name="Egg" type="Sprite2D"]
 position = Vector2(2, 1)
 texture = ExtResource("1_mabxm")
+region_enabled = true
+region_rect = Rect2(20.3786, 23.8249, 25.1343, 31.4854)
 
 [node name="Area2D" type="Area2D" parent="."]
 

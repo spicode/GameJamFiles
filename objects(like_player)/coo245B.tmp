@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://dwfxg67j3odt5" path="res://objects(like_player)/sauce_bowl.tscn" id="12_v0opa"]
 [ext_resource type="PackedScene" uid="uid://d3qvdq7nbcl6o" path="res://objects(like_player)/onion.tscn" id="12_wweua"]
 [ext_resource type="Script" path="res://scripts/sauce_ball.gd" id="13_0c8ch"]
-[ext_resource type="PackedScene" uid="uid://bf1d7y40kkm2h" path="res://objects(like_player)/mushroom.tscn" id="13_tyk5d"]
+[ext_resource type="Texture2D" uid="uid://c36xs4wyc0lir" path="res://art/ingrediants/MUSHROOMS INGREDIENTS.png" id="13_81rad"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j8u75"]
 size = Vector2(16.9143, 17.9224)
@@ -62,15 +62,16 @@ script = ExtResource("8_bfjjp")
 scale = Vector2(3, 3)
 
 [node name="water" parent="." instance=ExtResource("12_trbff")]
-position = Vector2(-151, -26)
+position = Vector2(91, -79)
 scale = Vector2(3, 3)
 
 [node name="onion" parent="." instance=ExtResource("12_wweua")]
-position = Vector2(-26, -119)
 script = ExtResource("8_bfjjp")
 
-[node name="Mushroom" parent="." instance=ExtResource("13_tyk5d")]
-position = Vector2(54, -182)
+[node name="Mushroom" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("13_81rad")
+script = ExtResource("8_bfjjp")
 
 [node name="SauceBowl" parent="." instance=ExtResource("12_v0opa")]
 scale = Vector2(3, 3)

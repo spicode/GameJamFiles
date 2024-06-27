@@ -7,3 +7,5 @@ load_path = "res://.godot/imported/CHESSE INGREDIENTS.png-bedda60463d6a0b585b5e4
 position = Vector2(-24, -30)
 scale = Vector2(3, 3)
 texture = SubResource("CompressedTexture2D_yobvj")
+region_enabled = true
+region_rect = Rect2(34.162, 38.9595, 12.1618, 6.35114)

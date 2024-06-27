@@ -10,7 +10,7 @@ size = Vector2(17.3333, 6.66667)
 scale = Vector2(3, 3)
 texture = ExtResource("1_fhoqy")
 region_enabled = true
-region_rect = Rect2(10.1163, 32.6513, 27.8961, 17.4103)
+region_rect = Rect2(14.8365, 39.3506, 18.9183, 9.18887)
 script = ExtResource("2_b7x8l")
 
 [node name="Area2D" type="Area2D" parent="."]
