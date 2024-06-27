@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://iyqxvou8sq7s"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_bbjgd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5i25o"]
+size = Vector2(24, 24)
+
+[node name="drop_spot" type="Area2D" groups=["drop_spot_group"]]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+scale = Vector2(22, 22)
+mesh = SubResource("QuadMesh_bbjgd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5i25o")

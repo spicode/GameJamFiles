@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3qvdq7nbcl6o"]
+[gd_scene load_steps=3 format=3 uid="uid://d3qvdq7nbcl6o"]
 
 [ext_resource type="Texture2D" uid="uid://d0gcrtcrkjn1j" path="res://art/ingrediants/ONION INGREDIENTS.png" id="1_0jm2v"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8v7am"]
+radius = 7.67391
 
 [node name="onion" type="Sprite2D"]
 position = Vector2(1, 0)
@@ -8,3 +11,8 @@ scale = Vector2(3, 3)
 texture = ExtResource("1_0jm2v")
 region_enabled = true
 region_rect = Rect2(1.92654, 33.8371, 12.5309, 13.1077)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_8v7am")

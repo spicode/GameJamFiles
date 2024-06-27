@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtq5ylnp4xniy"]
+
+[ext_resource type="Texture2D" uid="uid://7jxbegbtybvw" path="res://art/ingrediants/TOMATO INGREDIENT.png" id="1_phi1d"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jn5me"]
+radius = 7.0
+
+[node name="tomato" type="Sprite2D"]
+texture = ExtResource("1_phi1d")
+region_enabled = true
+region_rect = Rect2(51.4587, 34.7705, 10.9456, 10.9456)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_jn5me")

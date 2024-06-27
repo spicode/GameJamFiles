@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cejlr0vh3w20h"
-path="res://.godot/imported/salt.png-f0351c93a6af8e30aee4cbab6ef6a24d.ctex"
+uid="uid://7jxbegbtybvw"
+path="res://.godot/imported/TOMATO INGREDIENT.png-ff16ae376aa5f797c969a0db95f61b44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/ingrediants/salt.png"
-dest_files=["res://.godot/imported/salt.png-f0351c93a6af8e30aee4cbab6ef6a24d.ctex"]
+source_file="res://art/ingrediants/TOMATO INGREDIENT.png"
+dest_files=["res://.godot/imported/TOMATO INGREDIENT.png-ff16ae376aa5f797c969a0db95f61b44.ctex"]
 
 [params]
 

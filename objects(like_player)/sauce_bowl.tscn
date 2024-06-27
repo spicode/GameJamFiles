@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dwfxg67j3odt5"]
+[gd_scene load_steps=12 format=3 uid="uid://dwfxg67j3odt5"]
 
 [ext_resource type="Texture2D" uid="uid://oclun00klvuv" path="res://art/SauceAnimation/דשוSAUCE 1.png" id="1_gsaqq"]
 [ext_resource type="Texture2D" uid="uid://0ck8mn0xklex" path="res://art/SauceAnimation/דשוSAUCE 2.png" id="2_jc8ea"]
@@ -45,8 +45,16 @@ animations = [{
 "speed": 6.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dqev2"]
+size = Vector2(62, 29)
+
 [node name="SauceBowl" type="AnimatedSprite2D"]
-position = Vector2(-241, -157)
 sprite_frames = SubResource("SpriteFrames_mwtig")
 frame = 8
 frame_progress = 0.73578
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2, 0.5)
+shape = SubResource("RectangleShape2D_dqev2")

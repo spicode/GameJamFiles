@@ -1,11 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://m3d7tro7px8j"]
+[gd_scene load_steps=4 format=3 uid="uid://m3d7tro7px8j"]
 
-[ext_resource type="Texture2D" uid="uid://cejlr0vh3w20h" path="res://art/ingrediants/salt.png" id="1_yx81q"]
+[ext_resource type="Texture2D" uid="uid://bdqofm6gyywln" path="res://art/ingrediants/SPICES INGREDIENT.png" id="1_qxrgn"]
 [ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="2_qro4a"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nhqxf"]
+size = Vector2(14, 14)
+
 [node name="salt" type="Sprite2D"]
-position = Vector2(-6, 7)
-texture = ExtResource("1_yx81q")
+texture = ExtResource("1_qxrgn")
 region_enabled = true
-region_rect = Rect2(34.162, 16.2576, 9.59427, 14.7292)
+region_rect = Rect2(35.6734, 34.783, 12.432, 12.9725)
 script = ExtResource("2_qro4a")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_nhqxf")

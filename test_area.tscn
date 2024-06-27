@@ -1,16 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://dtxxasrmm7je7"]
+[gd_scene load_steps=7 format=3 uid="uid://dtxxasrmm7je7"]
 
 [ext_resource type="PackedScene" uid="uid://cainv4ov4u6o8" path="res://objects(like_player)/enemy.tscn" id="1_vye00"]
 [ext_resource type="Texture2D" uid="uid://dkosqv1jungdi" path="res://art/ingrediants/EGG.png" id="2_lgch5"]
 [ext_resource type="PackedScene" uid="uid://lxc3fx3wwegb" path="res://objects(like_player)/player.tscn" id="2_r1oig"]
 [ext_resource type="Texture2D" uid="uid://dfrhxqr6s6e6n" path="res://scripts/EGG.png" id="3_pipbd"]
+[ext_resource type="Texture2D" uid="uid://cc125w1hbbfoy" path="res://icon.svg" id="5_4kaoe"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_m2k43"]
 
 [node name="test_area" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(-11, 13)
+position = Vector2(-20, 9)
+scale = Vector2(-1.24693, 0.539313)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(-7, 9)
@@ -23,18 +25,22 @@ collision_layer = 3
 [node name="Camera2D" type="Camera2D" parent="player"]
 
 [node name="Egg" type="Sprite2D" parent="."]
-position = Vector2(58, -22)
+position = Vector2(170, -53)
 texture = ExtResource("2_lgch5")
 
 [node name="Egg2" type="Sprite2D" parent="."]
-position = Vector2(151, -6)
+position = Vector2(53, -152)
 scale = Vector2(0.46875, 0.484375)
 texture = ExtResource("3_pipbd")
 
-[node name="enemy" parent="." instance=ExtResource("1_vye00")]
-position = Vector2(319, -172)
-scale = Vector2(1.5, 1.5)
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(-101, -187)
+texture = ExtResource("5_4kaoe")
 
 [node name="enemy2" parent="." instance=ExtResource("1_vye00")]
-position = Vector2(-354, -5382)
+position = Vector2(-949, -4172)
+scale = Vector2(1.77996, 1.48088)
+
+[node name="enemy" parent="." instance=ExtResource("1_vye00")]
+position = Vector2(825, -377)
 scale = Vector2(1.5, 1.5)

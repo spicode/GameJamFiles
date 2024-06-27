@@ -2,7 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://dkosqv1jungdi" path="res://art/ingrediants/EGG.png" id="1_mabxm"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_dngt8"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cthsp"]
+radius = 12.0
 
 [node name="Egg" type="Sprite2D"]
 position = Vector2(2, 1)
@@ -13,4 +14,4 @@ region_rect = Rect2(20.3786, 23.8249, 25.1343, 31.4854)
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("CircleShape2D_dngt8")
+shape = SubResource("CapsuleShape2D_cthsp")

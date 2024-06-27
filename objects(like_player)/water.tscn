@@ -1,10 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://cpsterdq6puv5"]
+[gd_scene load_steps=4 format=3 uid="uid://cpsterdq6puv5"]
 
 [ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="1_2f6s5"]
 [ext_resource type="Texture2D" uid="uid://db78idwaix0k7" path="res://art/ingrediants/water ingredient (2).png" id="1_lbamg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b41p1"]
+size = Vector2(10, 10)
 
 [node name="water" type="Sprite2D"]
 texture = ExtResource("1_lbamg")
 region_enabled = true
 region_rect = Rect2(32.3767, 39.1612, 9.59427, 8.91861)
 script = ExtResource("1_2f6s5")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_b41p1")
