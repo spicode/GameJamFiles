@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://buy43th1ujst1"]
+[gd_scene load_steps=29 format=3 uid="uid://buy43th1ujst1"]
 
 [ext_resource type="PackedScene" uid="uid://byn7pabfelh75" path="res://objects(like_player)/brocoli.tscn" id="1_h6aca"]
 [ext_resource type="Texture2D" uid="uid://b08ncrkjgfiwy" path="res://art/LIBRESPRITE KITCHEN BACKGROUNG N2 (1).png" id="1_tku8a"]
@@ -21,6 +21,37 @@
 [ext_resource type="Script" path="res://objects(like_player)/bowls.gd" id="18_vin7b"]
 [ext_resource type="PackedScene" uid="uid://iyqxvou8sq7s" path="res://objects(like_player)/drop_spot.tscn" id="19_1j40e"]
 [ext_resource type="PackedScene" uid="uid://nb83qpiohiep" path="res://objects(like_player)/olive_oil.tscn" id="19_20dkh"]
+[ext_resource type="Texture2D" uid="uid://oclun00klvuv" path="res://art/SauceAnimation/דשוSAUCE 1.png" id="21_4upg8"]
+[ext_resource type="Texture2D" uid="uid://deakd2dht6usm" path="res://art/layersBowl/lasanga layers 2.png" id="22_tv4we"]
+[ext_resource type="Texture2D" uid="uid://btxty2tl0xsaq" path="res://art/layersBowl/lasanga layers 3.png" id="23_jskbc"]
+[ext_resource type="Texture2D" uid="uid://crjxjlgjujwc3" path="res://art/layersBowl/lasanga layers 4.png" id="24_eotmk"]
+[ext_resource type="Texture2D" uid="uid://dhc7dw36toorf" path="res://art/layersBowl/lasanga layers 5.png" id="25_5pi8m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r2i2f"]
+size = Vector2(62, 29)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ts074"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_4upg8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_tv4we")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_jskbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_eotmk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_5pi8m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="CookingPart" type="Node2D"]
 scale = Vector2(0.945, 0.945)
@@ -164,9 +195,29 @@ position = Vector2(-0.256897, -0.872215)
 scale = Vector2(0.377358, 0.803213)
 script = ExtResource("12_psedf")
 
+[node name="AreaSause" type="Area2D" parent="drop_spot_invis2/SauceBowl"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="drop_spot_invis2/SauceBowl/AreaSause"]
+position = Vector2(2, 0.5)
+shape = SubResource("RectangleShape2D_r2i2f")
+
+[node name="LayersBowl" parent="drop_spot_invis2" instance=ExtResource("11_lqtwk")]
+position = Vector2(-0.256897, -0.872215)
+scale = Vector2(0.377358, 0.803213)
+sprite_frames = SubResource("SpriteFrames_ts074")
+frame = 0
+frame_progress = 0.0
+script = ExtResource("12_psedf")
+
+[node name="AreaLayer" type="Area2D" parent="drop_spot_invis2/LayersBowl"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="drop_spot_invis2/LayersBowl/AreaLayer"]
+position = Vector2(2, 0.5)
+shape = SubResource("RectangleShape2D_r2i2f")
+
 [node name="hands" parent="." instance=ExtResource("13_5g2ai")]
 position = Vector2(-787, 800)
 scale = Vector2(12.215, 12.215)
 
-[connection signal="area_entered" from="drop_spot_invis2" to="drop_spot_invis2" method="_on_area_entered"]
-[connection signal="body_entered" from="drop_spot_invis2" to="drop_spot_invis2" method="_on_body_entered"]
+[connection signal="area_entered" from="drop_spot_invis2/SauceBowl/AreaSause" to="drop_spot_invis2" method="_on_area_2d_2_area_entered"]
+[connection signal="area_entered" from="drop_spot_invis2/LayersBowl/AreaLayer" to="drop_spot_invis2" method="_on_area_layer_area_entered"]
