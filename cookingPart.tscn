@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://nb83qpiohiep" path="res://objects(like_player)/olive_oil.tscn" id="19_20dkh"]
 
 [node name="CookingPart" type="Node2D"]
+scale = Vector2(0.945, 0.945)
 
 [node name="BackGround" type="Sprite2D" parent="."]
 position = Vector2(1005, 531)
@@ -39,19 +40,19 @@ position = Vector2(1737, 891)
 scale = Vector2(12.34, 12.34)
 
 [node name="drop_spot_invis" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1306, 402)
+position = Vector2(1313.23, 415.873)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis12" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1609, 424)
+position = Vector2(1605.29, 407.407)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis6" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1574, 191)
-scale = Vector2(10.5423, 3.57602)
+position = Vector2(1575.66, 168.254)
+scale = Vector2(10.554, 4.60128)
 
 [node name="drop_spot_invis7" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1275, 197)
+position = Vector2(1285.71, 179.894)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis8" parent="drop_spots" instance=ExtResource("3_trbij")]
@@ -75,11 +76,11 @@ position = Vector2(1032, 390)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis2" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(750, 388)
+position = Vector2(734.392, 428.571)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis4" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(422, 381)
+position = Vector2(425.397, 409.524)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis5" parent="drop_spots" instance=ExtResource("3_trbij")]
@@ -87,8 +88,8 @@ position = Vector2(125, 408)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis13" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1883, 452)
-scale = Vector2(10.5423, 3.57602)
+position = Vector2(1874.07, 408.466)
+scale = Vector2(10.542, 4.351)
 
 [node name="ingredints" type="Node2D" parent="."]
 
@@ -102,7 +103,7 @@ scale = Vector2(12.365, 12.365)
 script = ExtResource("3_nbx7t")
 
 [node name="peas" parent="ingredints" instance=ExtResource("7_r0bfm")]
-position = Vector2(1292, 180)
+position = Vector2(1288.89, 156.614)
 scale = Vector2(9.265, 9.265)
 script = ExtResource("3_nbx7t")
 
@@ -128,7 +129,7 @@ position = Vector2(1008, 402)
 scale = Vector2(15.65, 15.65)
 
 [node name="salt" parent="ingredints" instance=ExtResource("11_u8fww")]
-position = Vector2(1566, 186)
+position = Vector2(1569.31, 164.021)
 scale = Vector2(9.545, 9.545)
 region_rect = Rect2(37.27, 34.3651, 9.45914, 13.1077)
 
@@ -153,8 +154,9 @@ scale = Vector2(10.5, 10.5)
 script = ExtResource("12_psedf")
 
 [node name="oliveOil" parent="ingredints" instance=ExtResource("19_20dkh")]
-position = Vector2(1884, 385)
-scale = Vector2(12.655, 12.655)
+position = Vector2(1869.84, 401.058)
+scale = Vector2(10.94, 10.94)
+script = ExtResource("3_nbx7t")
 
 [node name="hands" parent="." instance=ExtResource("13_5g2ai")]
 position = Vector2(-787, 800)
