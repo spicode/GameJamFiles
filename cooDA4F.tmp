@@ -168,5 +168,4 @@ script = ExtResource("12_psedf")
 position = Vector2(-787, 800)
 scale = Vector2(12.215, 12.215)
 
-[connection signal="area_entered" from="drop_spot_invis2" to="drop_spot_invis2" method="_on_area_entered"]
 [connection signal="body_entered" from="drop_spot_invis2" to="drop_spot_invis2" method="_on_body_entered"]

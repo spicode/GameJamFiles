@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dwfxg67j3odt5"]
+[gd_scene load_steps=13 format=3 uid="uid://dwfxg67j3odt5"]
 
 [ext_resource type="Texture2D" uid="uid://oclun00klvuv" path="res://art/SauceAnimation/דשוSAUCE 1.png" id="1_gsaqq"]
 [ext_resource type="Texture2D" uid="uid://0ck8mn0xklex" path="res://art/SauceAnimation/דשוSAUCE 2.png" id="2_jc8ea"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bla8qh1ibarmm" path="res://art/SauceAnimation/דשוSAUCE 7.png" id="7_h5m4k"]
 [ext_resource type="Texture2D" uid="uid://c0e8v10jhlt5q" path="res://art/SauceAnimation/דשוSAUCE 8.png" id="8_2m653"]
 [ext_resource type="Texture2D" uid="uid://fjv7vjys7jed" path="res://art/SauceAnimation/דשוSAUCE 9.png" id="9_fsu8c"]
+[ext_resource type="PackedScene" uid="uid://dlewbais4dcgg" path="res://objects(like_player)/drop_spot_invis.tscn" id="10_e4m17"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mwtig"]
 animations = [{
@@ -52,6 +53,9 @@ size = Vector2(62, 29)
 sprite_frames = SubResource("SpriteFrames_mwtig")
 frame = 8
 frame_progress = 0.73578
+
+[node name="drop_spot_invis" parent="." instance=ExtResource("10_e4m17")]
+position = Vector2(7823.3, 217.914)
 
 [node name="Area2D" type="Area2D" parent="."]
 
