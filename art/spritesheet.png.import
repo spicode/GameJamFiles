@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkt1dlyjnfobp"
-path="res://.godot/imported/HANDS 2 DEFAULT.png-aa7050130bc5f8d41e60dfe63a77c4be.ctex"
+uid="uid://51qc4yrsbnlj"
+path="res://.godot/imported/spritesheet.png-da112e7611564366bce0e69f60737f77.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/random/HANDS 2 DEFAULT.png"
-dest_files=["res://.godot/imported/HANDS 2 DEFAULT.png-aa7050130bc5f8d41e60dfe63a77c4be.ctex"]
+source_file="res://art/spritesheet.png"
+dest_files=["res://.godot/imported/spritesheet.png-da112e7611564366bce0e69f60737f77.ctex"]
 
 [params]
 

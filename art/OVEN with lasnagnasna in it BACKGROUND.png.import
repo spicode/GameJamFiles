@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://51qc4yrsbnlj"
-path="res://.godot/imported/spritesheet.png-6155d911dedcad5c1e4636d4c17445d4.ctex"
+uid="uid://bnaqnk2u1xj0p"
+path="res://.godot/imported/OVEN with lasnagnasna in it BACKGROUND.png-9f986ae92d670d2380e6d82d50958f33.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/random/spritesheet.png"
-dest_files=["res://.godot/imported/spritesheet.png-6155d911dedcad5c1e4636d4c17445d4.ctex"]
+source_file="res://art/OVEN with lasnagnasna in it BACKGROUND.png"
+dest_files=["res://.godot/imported/OVEN with lasnagnasna in it BACKGROUND.png-9f986ae92d670d2380e6d82d50958f33.ctex"]
 
 [params]
 
