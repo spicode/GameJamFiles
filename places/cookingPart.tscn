@@ -1,33 +1,34 @@
 [gd_scene load_steps=31 format=3 uid="uid://buy43th1ujst1"]
 
-[ext_resource type="PackedScene" uid="uid://byn7pabfelh75" path="res://objects(like_player)/brocoli.tscn" id="1_h6aca"]
+[ext_resource type="PackedScene" uid="uid://byn7pabfelh75" path="res://places/objects(like_player)/brocoli.tscn" id="1_h6aca"]
 [ext_resource type="Texture2D" uid="uid://b08ncrkjgfiwy" path="res://art/random/LIBRESPRITE KITCHEN BACKGROUNG N2 (1).png" id="1_qd2ys"]
-[ext_resource type="PackedScene" uid="uid://d4f58llm605ux" path="res://objects(like_player)/cheese.tscn" id="2_6puvp"]
+[ext_resource type="PackedScene" uid="uid://d4f58llm605ux" path="res://places/objects(like_player)/cheese.tscn" id="2_6puvp"]
 [ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="3_nbx7t"]
-[ext_resource type="PackedScene" uid="uid://dlewbais4dcgg" path="res://objects(like_player)/drop_spot_invis.tscn" id="3_trbij"]
-[ext_resource type="PackedScene" uid="uid://cgpskou75yp4j" path="res://objects(like_player)/egg.tscn" id="4_5ixck"]
-[ext_resource type="PackedScene" uid="uid://dmo8yodnbrcmy" path="res://objects(like_player)/carrot.tscn" id="5_na3ga"]
-[ext_resource type="PackedScene" uid="uid://bf1d7y40kkm2h" path="res://objects(like_player)/mushroom.tscn" id="6_emvep"]
-[ext_resource type="PackedScene" uid="uid://cic8dqa2ylmar" path="res://objects(like_player)/peas.tscn" id="7_r0bfm"]
-[ext_resource type="PackedScene" uid="uid://cpsterdq6puv5" path="res://objects(like_player)/water.tscn" id="8_0sft1"]
-[ext_resource type="PackedScene" uid="uid://d3qvdq7nbcl6o" path="res://objects(like_player)/onion.tscn" id="9_7fog1"]
-[ext_resource type="PackedScene" uid="uid://bigx3a63177d3" path="res://objects(like_player)/lasagna_layers.tscn" id="10_0hy3h"]
-[ext_resource type="PackedScene" uid="uid://dwfxg67j3odt5" path="res://objects(like_player)/sauce_bowl.tscn" id="11_lqtwk"]
-[ext_resource type="PackedScene" uid="uid://d220w4pnupsyd" path="res://objects(like_player)/sprite_2d.tscn" id="11_ovqan"]
-[ext_resource type="PackedScene" uid="uid://m3d7tro7px8j" path="res://objects(like_player)/salt.tscn" id="11_u8fww"]
+[ext_resource type="PackedScene" uid="uid://dlewbais4dcgg" path="res://places/objects(like_player)/drop_spot_invis.tscn" id="3_trbij"]
+[ext_resource type="PackedScene" uid="uid://cgpskou75yp4j" path="res://places/objects(like_player)/egg.tscn" id="4_5ixck"]
+[ext_resource type="PackedScene" uid="uid://dmo8yodnbrcmy" path="res://places/objects(like_player)/carrot.tscn" id="5_na3ga"]
+[ext_resource type="PackedScene" uid="uid://bf1d7y40kkm2h" path="res://places/objects(like_player)/mushroom.tscn" id="6_emvep"]
+[ext_resource type="PackedScene" uid="uid://cic8dqa2ylmar" path="res://places/objects(like_player)/peas.tscn" id="7_r0bfm"]
+[ext_resource type="PackedScene" uid="uid://cpsterdq6puv5" path="res://places/objects(like_player)/water.tscn" id="8_0sft1"]
+[ext_resource type="PackedScene" uid="uid://d3qvdq7nbcl6o" path="res://places/objects(like_player)/onion.tscn" id="9_7fog1"]
+[ext_resource type="PackedScene" uid="uid://bigx3a63177d3" path="res://places/objects(like_player)/lasagna_layers.tscn" id="10_0hy3h"]
+[ext_resource type="PackedScene" uid="uid://dwfxg67j3odt5" path="res://places/objects(like_player)/sauce_bowl.tscn" id="11_lqtwk"]
+[ext_resource type="PackedScene" uid="uid://d220w4pnupsyd" path="res://places/objects(like_player)/sprite_2d.tscn" id="11_ovqan"]
+[ext_resource type="PackedScene" uid="uid://m3d7tro7px8j" path="res://places/objects(like_player)/salt.tscn" id="11_u8fww"]
 [ext_resource type="Script" path="res://scripts/sauce_ball.gd" id="12_psedf"]
-[ext_resource type="PackedScene" uid="uid://b43j02bu2c86u" path="res://objects(like_player)/hands.tscn" id="13_5g2ai"]
-[ext_resource type="PackedScene" uid="uid://d271ehbuu5rl6" path="res://objects(like_player)/basil.tscn" id="14_sgvd6"]
-[ext_resource type="PackedScene" uid="uid://dtq5ylnp4xniy" path="res://objects(like_player)/tomato.tscn" id="14_tth8y"]
-[ext_resource type="Script" path="res://objects(like_player)/bowls.gd" id="18_vin7b"]
-[ext_resource type="PackedScene" uid="uid://iyqxvou8sq7s" path="res://objects(like_player)/drop_spot.tscn" id="19_1j40e"]
-[ext_resource type="PackedScene" uid="uid://nb83qpiohiep" path="res://objects(like_player)/olive_oil.tscn" id="19_20dkh"]
-[ext_resource type="PackedScene" uid="uid://rjh6n1flc8ux" path="res://objects(like_player)/garlic.tscn" id="19_cqhnr"]
+[ext_resource type="PackedScene" uid="uid://b43j02bu2c86u" path="res://places/objects(like_player)/hands.tscn" id="13_5g2ai"]
+[ext_resource type="PackedScene" uid="uid://d271ehbuu5rl6" path="res://places/objects(like_player)/basil.tscn" id="14_sgvd6"]
+[ext_resource type="PackedScene" uid="uid://dtq5ylnp4xniy" path="res://places/objects(like_player)/tomato.tscn" id="14_tth8y"]
+[ext_resource type="Script" path="res://places/objects(like_player)/bowls.gd" id="18_vin7b"]
+[ext_resource type="PackedScene" uid="uid://iyqxvou8sq7s" path="res://places/objects(like_player)/drop_spot.tscn" id="19_1j40e"]
+[ext_resource type="PackedScene" uid="uid://nb83qpiohiep" path="res://places/objects(like_player)/olive_oil.tscn" id="19_20dkh"]
+[ext_resource type="PackedScene" uid="uid://rjh6n1flc8ux" path="res://places/objects(like_player)/garlic.tscn" id="19_cqhnr"]
+[ext_resource type="Texture2D" uid="uid://oclun00klvuv" path="res://art/SauceAnimation/דשוSAUCE 1.png" id="21_4upg8"]
 [ext_resource type="Texture2D" uid="uid://deakd2dht6usm" path="res://art/layersBowl/lasanga layers 2.png" id="22_tv4we"]
 [ext_resource type="Texture2D" uid="uid://btxty2tl0xsaq" path="res://art/layersBowl/lasanga layers 3.png" id="23_jskbc"]
-[ext_resource type="Texture2D" uid="uid://oclun00klvuv" path="res://art/random/SauceAnimation/דשוSAUCE 1.png" id="23_ks26u"]
 [ext_resource type="Texture2D" uid="uid://crjxjlgjujwc3" path="res://art/layersBowl/lasanga layers 4.png" id="24_eotmk"]
 [ext_resource type="Texture2D" uid="uid://dhc7dw36toorf" path="res://art/layersBowl/lasanga layers 5.png" id="25_5pi8m"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r2i2f"]
 size = Vector2(62, 29)
@@ -36,7 +37,7 @@ size = Vector2(62, 29)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("23_ks26u")
+"texture": ExtResource("21_4upg8")
 }, {
 "duration": 1.0,
 "texture": ExtResource("22_tv4we")
@@ -78,7 +79,7 @@ position = Vector2(1171.43, 429.63)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis12" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1432.8, 445.503)
+position = Vector2(1434.92, 420.106)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis6" parent="drop_spots" instance=ExtResource("3_trbij")]
@@ -90,15 +91,15 @@ position = Vector2(1285.71, 179.894)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis8" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1007.41, 204.233)
+position = Vector2(1006, 177)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis9" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(752.381, 212.698)
+position = Vector2(742, 174)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis10" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(441.27, 214.815)
+position = Vector2(455, 183)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis11" parent="drop_spots" instance=ExtResource("3_trbij")]
@@ -114,19 +115,19 @@ position = Vector2(653.968, 426.455)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis4" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(386.243, 428.571)
+position = Vector2(385.185, 410.582)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis5" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(125.926, 428.571)
+position = Vector2(124.868, 410.582)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis15" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1943.92, 431.746)
+position = Vector2(1925.93, 415.873)
 scale = Vector2(6.18, 4.61)
 
 [node name="drop_spot_invis13" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1716.4, 457.143)
+position = Vector2(1705.82, 415.873)
 scale = Vector2(10.542, 4.351)
 
 [node name="drop_spot_invis14" parent="drop_spots" instance=ExtResource("3_trbij")]
@@ -136,8 +137,8 @@ scale = Vector2(10.542, 4.351)
 [node name="ingredints" type="Node2D" parent="."]
 
 [node name="lasagna layers" parent="ingredints" groups=["foods"] instance=ExtResource("10_0hy3h")]
-position = Vector2(958.73, 921.693)
-scale = Vector2(13.37, 13.37)
+position = Vector2(1301.59, 192.593)
+scale = Vector2(6.8, 6.8)
 script = ExtResource("3_nbx7t")
 
 [node name="Mushroom" parent="ingredints" groups=["foods"] instance=ExtResource("6_emvep")]
@@ -239,7 +240,5 @@ position = Vector2(-787, 800)
 scale = Vector2(12.215, 12.215)
 
 [connection signal="area_entered" from="drop_spot_invis2/SauceBowl/AreaSause" to="drop_spot_invis2" method="_on_area_2d_2_area_entered"]
-[connection signal="area_entered" from="drop_spot_invis2/SauceBowl/AreaSause" to="drop_spot_invis2" method="_on_area_sause_area_entered"]
-[connection signal="animation_finished" from="drop_spot_invis2/LayersBowl" to="drop_spot_invis2" method="_on_layers_bowl_animation_finished"]
 [connection signal="area_entered" from="drop_spot_invis2/LayersBowl/AreaLayer" to="drop_spot_invis2" method="_on_area_layer_area_entered"]
 [connection signal="input_event" from="drop_spot_invis2/LayersBowl/AreaLayer" to="drop_spot_invis2/SauceBowl" method="_on_area_layer_input_event"]

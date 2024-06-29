@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://btpd8nsidbkmw"]
+
+[ext_resource type="Texture2D" uid="uid://b7pu35rik31ot" path="res://art/OVEN with lasnagnasna in it BACKGROUND.png" id="1_uegdb"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="OvenWithLasnagnasnaInItBackground" type="Sprite2D" parent="."]
+position = Vector2(133, 145)
+texture = ExtResource("1_uegdb")
