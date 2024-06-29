@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkt1dlyjnfobp"
-path="res://.godot/imported/HANDS 2 DEFAULT.png-66a594521cf646248ebfebd1bbb17ac4.ctex"
+uid="uid://b640boe60xlr3"
+path="res://.godot/imported/epic lasagna.jpg-e8bd239b6aafeacdc0940ac3b13055f3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/HANDS 2 DEFAULT.png"
-dest_files=["res://.godot/imported/HANDS 2 DEFAULT.png-66a594521cf646248ebfebd1bbb17ac4.ctex"]
+source_file="res://art/random/epic lasagna.jpg"
+dest_files=["res://.godot/imported/epic lasagna.jpg-e8bd239b6aafeacdc0940ac3b13055f3.ctex"]
 
 [params]
 

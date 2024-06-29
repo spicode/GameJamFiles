@@ -1,42 +1,18 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
 [gd_scene load_steps=3 format=3 uid="uid://cgpskou75yp4j"]
-=======
-[gd_scene load_steps=2 format=3 uid="uid://ciu37cjr2i65r"]
->>>>>>> Stashed changes
-=======
-[gd_scene load_steps=3 format=3 uid="uid://ciu37cjr2i65r"]
->>>>>>> parent of 687026c (phgfjh)
 
-[ext_resource type="Texture2D" uid="uid://dkosqv1jungdi" path="res://art/ingrediants/EGG.png" id="1_mabxm"]
+[ext_resource type="Texture2D" uid="uid://dkosqv1jungdi" path="res://art/ingrediants/EGG.png" id="2_4265r"]
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q7832"]
 radius = 3.66667
 height = 10.3333
-=======
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cthsp"]
-radius = 12.0
->>>>>>> parent of 687026c (phgfjh)
 
-[node name="Egg" type="Sprite2D"]
-position = Vector2(2, 1)
-texture = ExtResource("1_mabxm")
+[node name="egg" type="Sprite2D"]
+texture = ExtResource("2_4265r")
 region_enabled = true
-region_rect = Rect2(20.3786, 23.8249, 25.1343, 31.4854)
+region_rect = Rect2(19.8381, 23.5546, 25.2694, 30.9449)
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-<<<<<<< HEAD
 scale = Vector2(3, 3)
 shape = SubResource("CapsuleShape2D_q7832")
-=======
-[node name="Egg" type="Sprite2D"]
-position = Vector2(2, 1)
-texture = ExtResource("1_mabxm")
->>>>>>> Stashed changes
-=======
-shape = SubResource("CapsuleShape2D_cthsp")
->>>>>>> parent of 687026c (phgfjh)
