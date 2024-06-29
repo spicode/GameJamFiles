@@ -13,10 +13,6 @@ func _ready():
 	
 	
 func _physics_process(delta):
-	if velocity.x < 0:
-		AnimatedSprite2D.flip_h = true
-	else:
-		AnimatedSprite2D.flip_h = false
 	handle_input(delta)
 	
 	
