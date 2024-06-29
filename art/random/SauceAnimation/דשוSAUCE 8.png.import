@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0ck8mn0xklex"
-path="res://.godot/imported/דשוSAUCE 2.png-35f0d855e11fd4d0b2a44185f224380e.ctex"
+uid="uid://c0e8v10jhlt5q"
+path="res://.godot/imported/דשוSAUCE 8.png-06343460d6006be4c2573ec5111d326e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/SauceAnimation/דשוSAUCE 2.png"
-dest_files=["res://.godot/imported/דשוSAUCE 2.png-35f0d855e11fd4d0b2a44185f224380e.ctex"]
+source_file="res://art/random/SauceAnimation/דשוSAUCE 8.png"
+dest_files=["res://.godot/imported/דשוSAUCE 8.png-06343460d6006be4c2573ec5111d326e.ctex"]
 
 [params]
 

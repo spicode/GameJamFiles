@@ -24,9 +24,10 @@ collision_layer = 3
 collision_mask = 3
 
 [node name="enemy2" parent="." instance=ExtResource("3_ignpu")]
-position = Vector2(196, 244)
-scale = Vector2(2.1, 2.1)
+position = Vector2(185, 162)
+scale = Vector2(2.5, 2.5)
 collision_layer = 3
-collision_mask = 3
 
 [node name="Camera2D" type="Camera2D" parent="enemy2"]
+position = Vector2(9.58269, 13.6012)
+scale = Vector2(2.1, 2.1)

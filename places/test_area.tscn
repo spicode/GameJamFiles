@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cc125w1hbbfoy" path="res://icon.svg" id="4_7t3qg"]
 [ext_resource type="PackedScene" uid="uid://cainv4ov4u6o8" path="res://objects(like_player)/enemy.tscn" id="5_xxkoh"]
 
+
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_m2k43"]
 
 [node name="test_area" type="Node2D"]

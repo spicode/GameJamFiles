@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 # Player properties
-var speed = 200.0
-var jump_force = -350.0  # Negative value for upward force
+var speed = 300
+var jump_force = -370.0  # Negative value for upward force
 var gravity = 800.0
 @onready var _animated_sprite = $AnimatedSprite2D
 # State
@@ -13,6 +13,9 @@ func _ready():
 	
 	
 func _physics_process(delta):
+	if Input.is_action_pressed("ui_filedialog_refresh"):
+		get_tree().reload_current_scene()
+		
 	handle_input(delta)
 	
 	
@@ -37,7 +40,7 @@ func _physics_process(delta):
 func handle_input(delta):
 	var input_vector = Vector2.ZERO
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
-	
+
 	velocity.x = input_vector.x * speed
 	
 	_animated_sprite.play("run")
@@ -60,3 +63,7 @@ func _on_Foot_area_exited(area):
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("enemy"):
 		get_tree().reload_current_scene()
+func _input(event):
+	if event.is_action_pressed("restartLevel"):
+		get_tree().reload_current_scene()
+		print("restart")
