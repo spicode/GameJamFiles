@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+[gd_scene load_steps=2 format=3 uid="uid://bigx3a63177d3"]
+
+[ext_resource type="Texture2D" uid="uid://8qngobc0d26d" path="res://art/ingrediants/LASANGA LAYERS INGREDIENTS.png" id="1_40r06"]
+
+=======
 [gd_scene load_steps=3 format=3 uid="uid://bigx3a63177d3"]
 
 [ext_resource type="Texture2D" uid="uid://8qngobc0d26d" path="res://art/ingrediants/LASANGA LAYERS INGREDIENTS.png" id="1_40r06"]
@@ -5,10 +11,14 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mh57v"]
 size = Vector2(13.3333, 11.6667)
 
+>>>>>>> parent of 687026c (phgfjh)
 [node name="lasagna layers" type="Sprite2D"]
 scale = Vector2(3, 3)
 texture = ExtResource("1_40r06")
 region_enabled = true
+<<<<<<< HEAD
+region_rect = Rect2(50.0254, 34.3776, 11.7564, 9.99966)
+=======
 region_rect = Rect2(49.1614, 34.7705, 13.2428, 10.6753)
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -16,3 +26,4 @@ region_rect = Rect2(49.1614, 34.7705, 13.2428, 10.6753)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(7.94729e-08, -0.5)
 shape = SubResource("RectangleShape2D_mh57v")
+>>>>>>> parent of 687026c (phgfjh)

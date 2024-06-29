@@ -32,13 +32,3 @@ func _ready():
 ##	if event.is_action_pressed("ui_accept"):
 #		if getCurrentFrameRect().has_point(to_local(event.global_position)):
 #			emit_signal("clicked")
-
-
-func _on_area_layer_input_event(viewport, event, shape_idx):
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT:
-		if event.pressed:
-				print(Global.is_Mixing)
-				Global.is_Mixing = true	
-		else:
-			Global.is_Mixing = false
-		

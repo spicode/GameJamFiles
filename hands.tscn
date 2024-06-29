@@ -1,11 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://dttm17wbos2ye"]
+[gd_scene load_steps=3 format=3 uid="uid://b43j02bu2c86u"]
 
+[ext_resource type="Texture2D" uid="uid://bkt1dlyjnfobp" path="res://art/HANDS 2 DEFAULT.png" id="1_j7tx6"]
 [ext_resource type="Script" path="res://scripts/hands.gd" id="1_xhr3d"]
-[ext_resource type="Texture2D" path="res://art/random/HANDS 2 DEFAULT.png" id="2_6cx26"]
 
 [node name="hands" type="Node2D"]
 position = Vector2(2, -4)
 script = ExtResource("1_xhr3d")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_6cx26")
+texture = ExtResource("1_j7tx6")

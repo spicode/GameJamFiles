@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bv1a842xuhrsj"
-path="res://.godot/imported/Sprite-0003OLDLADYRUNNING-ezgif.com-gif-to-sprite-converter.png-b3f4916a0e041b3950a5524bea0fdd66.ctex"
+uid="uid://b640boe60xlr3"
+path="res://.godot/imported/epic lasagna.jpg-cbc18d07f8b2022e5d4f48f0429fd6af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/random/Sprite-0003OLDLADYRUNNING-ezgif.com-gif-to-sprite-converter.png"
-dest_files=["res://.godot/imported/Sprite-0003OLDLADYRUNNING-ezgif.com-gif-to-sprite-converter.png-b3f4916a0e041b3950a5524bea0fdd66.ctex"]
+source_file="res://art/epic lasagna.jpg"
+dest_files=["res://.godot/imported/epic lasagna.jpg-cbc18d07f8b2022e5d4f48f0429fd6af.ctex"]
 
 [params]
 

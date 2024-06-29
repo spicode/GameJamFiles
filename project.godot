@@ -11,10 +11,11 @@ config_version=5
 [application]
 
 config/name="GameJam"
-run/main_scene="res://places/test_area.tscn"
+run/main_scene="res://cookingPart.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 <<<<<<<Updatedupstreamrun/main_scene="res://test_area.tscn"
+<<<<<<<HEADrun/main_scene="res://places/cookingPart.tscn"
 
 [autoload]
 

@@ -2,8 +2,6 @@ extends Area2D
 
 var foods
 var mouse_offset = Vector2(0,0) 
-var respie_layers = ["flour"," Egg","water"]
-var respie_sauce = ["oliveOil",]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -44,6 +42,7 @@ func _on_area_2d_2_area_entered(area):
 	print(area.name)
 	var body = area.get_parent()
 	if area.get_parent().is_in_group("foods"):
+	
 		body.queue_free()
 		$SauceBowl.frame += 1
 		print(body.name)
@@ -53,6 +52,7 @@ func _on_area_layer_area_entered(area):
 	print(area.name)
 	var body = area.get_parent()
 	if area.get_parent().is_in_group("foods"):
+	
 		body.queue_free()
 		$LayersBowl.frame += 1
 		print(body.name)
