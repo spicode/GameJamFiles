@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_gotet"]
 [ext_resource type="Texture2D" uid="uid://crfsmvk17421f" path="res://art/idolposeloopanimation-ezgif.com-gif-to-sprite-converter.png" id="2_nmb53"]
 [ext_resource type="Texture2D" uid="uid://bv1a842xuhrsj" path="res://art/Sprite-0003OLDLADYRUNNING-ezgif.com-gif-to-sprite-converter.png" id="2_pshpo"]
-[ext_resource type="Texture2D" uid="uid://bect2dm1a5tv8" path="res://art/OLDLADYjumping-ezgif.com-gif-to-sprite-converter.png" id="3_ji5fb"]
+[ext_resource type="Texture2D" uid="uid://beiads8xxjlkq" path="res://art/OLDLADYjumping-ezgif.com-gif-to-sprite-converter.png" id="3_ji5fb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xv8l0"]
 radius = 8.0

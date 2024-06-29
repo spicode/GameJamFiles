@@ -16,7 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://dwfxg67j3odt5" path="res://objects(like_player)/sauce_bowl.tscn" id="11_lqtwk"]
 [ext_resource type="PackedScene" uid="uid://m3d7tro7px8j" path="res://salt.tscn" id="11_u8fww"]
 [ext_resource type="Script" path="res://scripts/sauce_ball.gd" id="12_psedf"]
-[ext_resource type="PackedScene" uid="uid://b43j02bu2c86u" path="res://hands.tscn" id="13_5g2ai"]
+[ext_resource type="PackedScene" path="res://hands.tscn" id="13_5g2ai"]
 [ext_resource type="PackedScene" uid="uid://dtq5ylnp4xniy" path="res://tomato.tscn" id="14_tth8y"]
 [ext_resource type="PackedScene" uid="uid://iyqxvou8sq7s" path="res://objects(like_player)/drop_spot.tscn" id="19_1j40e"]
 [ext_resource type="PackedScene" uid="uid://nb83qpiohiep" path="res://objects(like_player)/olive_oil.tscn" id="19_20dkh"]
