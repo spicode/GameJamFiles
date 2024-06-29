@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtm4mfgeaeopr"]
+
+[ext_resource type="Texture2D" uid="uid://ckw17vs0y6p62" path="res://art/oven mark.png" id="1_1it5a"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-97, 50)
+scale = Vector2(7.03992, 7.54859)
+texture = ExtResource("1_1it5a")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_left = -22.0
+offset_top = -49.0
+offset_right = 18.0
+offset_bottom = -9.0
