@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkt1dlyjnfobp"
-path="res://.godot/imported/HANDS 2 DEFAULT.png-66a594521cf646248ebfebd1bbb17ac4.ctex"
+uid="uid://bbd1ld1qpuvdf"
+path="res://.godot/imported/BASIL INGREDIENT.png-cf4d1ba0ae4125f2ea795d3e85f953b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/HANDS 2 DEFAULT.png"
-dest_files=["res://.godot/imported/HANDS 2 DEFAULT.png-66a594521cf646248ebfebd1bbb17ac4.ctex"]
+source_file="res://art/ingrediants/BASIL INGREDIENT.png"
+dest_files=["res://.godot/imported/BASIL INGREDIENT.png-cf4d1ba0ae4125f2ea795d3e85f953b3.ctex"]
 
 [params]
 

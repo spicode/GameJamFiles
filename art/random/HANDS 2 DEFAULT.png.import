@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dm1o3xn1xi40g"
-path="res://.godot/imported/HANDS 3 STIRRING W SPOON.png-a6112922135108d88b9a03d849c29b2d.ctex"
+uid="uid://bkt1dlyjnfobp"
+path="res://.godot/imported/HANDS 2 DEFAULT.png-aa7050130bc5f8d41e60dfe63a77c4be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/HANDS 3 STIRRING W SPOON.png"
-dest_files=["res://.godot/imported/HANDS 3 STIRRING W SPOON.png-a6112922135108d88b9a03d849c29b2d.ctex"]
+source_file="res://art/random/HANDS 2 DEFAULT.png"
+dest_files=["res://.godot/imported/HANDS 2 DEFAULT.png-aa7050130bc5f8d41e60dfe63a77c4be.ctex"]
 
 [params]
 
