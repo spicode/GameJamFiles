@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5mghmlup8bks"
-path="res://.godot/imported/oven mark.png-374770e39e565707183ba2168287aacc.ctex"
+uid="uid://bla8qh1ibarmm"
+path="res://.godot/imported/דשוSAUCE 7.png-19ea8f4a53db8c0d0d99083f3eb85846.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://places/objects(like_player)/oven mark.png"
-dest_files=["res://.godot/imported/oven mark.png-374770e39e565707183ba2168287aacc.ctex"]
+source_file="res://art/SauceAnimation/דשוSAUCE 7.png"
+dest_files=["res://.godot/imported/דשוSAUCE 7.png-19ea8f4a53db8c0d0d99083f3eb85846.ctex"]
 
 [params]
 

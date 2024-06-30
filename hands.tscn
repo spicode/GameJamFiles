@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3k0qsy3eoi65"]
+
+[ext_resource type="Script" path="res://scripts/hands.gd" id="1_1u3xr"]
+[ext_resource type="Texture2D" uid="uid://bkt1dlyjnfobp" path="res://art/random/HANDS 2 DEFAULT.png" id="2_vunic"]
+
+[node name="hands" type="Node2D"]
+position = Vector2(2, -4)
+script = ExtResource("1_1u3xr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_vunic")

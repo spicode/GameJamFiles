@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://bf1d7y40kkm2h" path="res://objects(like_player)/mushroom.tscn" id="13_tyk5d"]
 
 
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j8u75"]
 size = Vector2(16.9143, 17.9224)
 

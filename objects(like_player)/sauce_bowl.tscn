@@ -1,0 +1,61 @@
+[gd_scene load_steps=12 format=3 uid="uid://dwfxg67j3odt5"]
+
+[ext_resource type="Texture2D" uid="uid://oclun00klvuv" path="res://art/SauceAnimation/דשוSAUCE 1.png" id="1_auurr"]
+[ext_resource type="Texture2D" uid="uid://0ck8mn0xklex" path="res://art/SauceAnimation/דשוSAUCE 2.png" id="2_kc81c"]
+[ext_resource type="Texture2D" uid="uid://cr6aoni8gulpr" path="res://art/SauceAnimation/דשוSAUCE 3.png" id="3_jd83b"]
+[ext_resource type="Texture2D" uid="uid://bmevyi5b58jmt" path="res://art/SauceAnimation/דשוSAUCE 4.png" id="4_i665s"]
+[ext_resource type="Texture2D" uid="uid://dg3gmi26emln0" path="res://art/SauceAnimation/דשוSAUCE 5.png" id="5_v2vjb"]
+[ext_resource type="Texture2D" uid="uid://bpwpts45hwtgx" path="res://art/SauceAnimation/דשוSAUCE 6.png" id="6_e7scm"]
+[ext_resource type="Texture2D" uid="uid://bla8qh1ibarmm" path="res://art/SauceAnimation/דשוSAUCE 7.png" id="7_64u6e"]
+[ext_resource type="Texture2D" uid="uid://c0e8v10jhlt5q" path="res://art/SauceAnimation/דשוSAUCE 8.png" id="8_b2yro"]
+[ext_resource type="Texture2D" uid="uid://fjv7vjys7jed" path="res://art/SauceAnimation/דשוSAUCE 9.png" id="9_q8e0o"]
+
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mwtig"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_auurr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_kc81c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jd83b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_i665s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_v2vjb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_e7scm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_64u6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_b2yro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_q8e0o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dqev2"]
+size = Vector2(62, 29)
+
+[node name="SauceBowl" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_mwtig")
+frame = 8
+frame_progress = 0.73578
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2, 0.5)
+shape = SubResource("RectangleShape2D_dqev2")
