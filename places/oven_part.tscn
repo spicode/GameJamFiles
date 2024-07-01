@@ -1,11 +1,26 @@
-[gd_scene load_steps=2 format=3 uid="uid://btpd8nsidbkmw"]
+[gd_scene load_steps=5 format=3 uid="uid://btpd8nsidbkmw"]
 
+[ext_resource type="Script" path="res://places/oven_part.gd" id="1_3krp0"]
 [ext_resource type="Texture2D" uid="uid://b7pu35rik31ot" path="res://art/OVEN with lasnagnasna in it BACKGROUND.png" id="1_uegdb"]
+[ext_resource type="PackedScene" uid="uid://byd4evg5rbut2" path="res://Arrow.tscn" id="2_cnwrm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dqqla"]
+size = Vector2(20, 51.5)
 
 [node name="Node2D" type="Node2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
+script = ExtResource("1_3krp0")
 
 [node name="OvenWithLasnagnasnaInItBackground" type="Sprite2D" parent="."]
-position = Vector2(133, 145)
+position = Vector2(518, 305)
 texture = ExtResource("1_uegdb")
+
+[node name="Sprite2D" parent="." instance=ExtResource("2_cnwrm")]
+position = Vector2(401, 10)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(506, 67.25)
+shape = SubResource("RectangleShape2D_dqqla")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

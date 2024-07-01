@@ -29,7 +29,6 @@
 [ext_resource type="Texture2D" uid="uid://crjxjlgjujwc3" path="res://art/layersBowl/lasanga layers 4.png" id="24_eotmk"]
 [ext_resource type="Texture2D" uid="uid://dhc7dw36toorf" path="res://art/layersBowl/lasanga layers 5.png" id="25_5pi8m"]
 
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r2i2f"]
 size = Vector2(62, 29)
 

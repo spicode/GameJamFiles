@@ -1,17 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://dmo8yodnbrcmy"]
 
-[ext_resource type="Texture2D" uid="uid://ch6urptsudqvh" path="res://art/ingrediants/CARROT INGREDIENTS.png" id="1_fhoqy"]
-[ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="2_b7x8l"]
+[ext_resource type="Texture2D" uid="uid://ch6urptsudqvh" path="res://art/ingrediants/CARROT INGREDIENTS.png" id="1_1ipvn"]
+[ext_resource type="Script" path="res://scripts/drag_and_drop.gd" id="2_8ttrb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i03yk"]
 size = Vector2(19.6667, 9)
 
 [node name="Carrot" type="Sprite2D"]
 scale = Vector2(3, 3)
-texture = ExtResource("1_fhoqy")
+texture = ExtResource("1_1ipvn")
 region_enabled = true
 region_rect = Rect2(14.8365, 39.3506, 18.9183, 9.18887)
-script = ExtResource("2_b7x8l")
+script = ExtResource("2_8ttrb")
 
 [node name="Area2D" type="Area2D" parent="."]
 
