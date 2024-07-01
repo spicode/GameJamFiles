@@ -1,9 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://dd04c64553d2o"]
 
 [ext_resource type="Texture2D" uid="uid://bk7333h3lbq8y" path="res://art/random/new amazing town that i made all by my self yes it does look increadible it looks amazing doesnt it yes it does.png" id="1_fxquo"]
-[ext_resource type="PackedScene" uid="uid://cainv4ov4u6o8" path="res://places/objects(like_player)/enemy.tscn" id="2_kpswk"]
-[ext_resource type="PackedScene" uid="uid://lxc3fx3wwegb" path="res://places/objects(like_player)/player.tscn" id="3_ignpu"]
-
+[ext_resource type="PackedScene" uid="uid://cainv4ov4u6o8" path="res://objects(like_player)/enemy.tscn" id="2_kpswk"]
+[ext_resource type="PackedScene" uid="uid://lxc3fx3wwegb" path="res://objects(like_player)/player.tscn" id="3_ignpu"]
 
 [node name="Node2D" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [78.0]
@@ -25,9 +24,10 @@ collision_layer = 3
 collision_mask = 3
 
 [node name="enemy2" parent="." instance=ExtResource("3_ignpu")]
-position = Vector2(196, 244)
-scale = Vector2(2.1, 2.1)
+position = Vector2(185, 162)
+scale = Vector2(2.5, 2.5)
 collision_layer = 3
-collision_mask = 3
 
 [node name="Camera2D" type="Camera2D" parent="enemy2"]
+position = Vector2(9.58269, 13.6012)
+scale = Vector2(2.1, 2.1)

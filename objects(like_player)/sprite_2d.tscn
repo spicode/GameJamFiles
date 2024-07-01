@@ -13,6 +13,8 @@ region_enabled = true
 region_rect = Rect2(34.2971, 32.203, 14.0536, 16.2157)
 script = ExtResource("2_drse8")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-0.166666, 0.166667)
 shape = SubResource("RectangleShape2D_i6scy")

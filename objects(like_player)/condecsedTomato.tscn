@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://du3f2ssn5y5l1"]
+
+[ext_resource type="Texture2D" uid="uid://h543ag0hm8n3" path="res://art/ingrediants/CONSINTRATED TOMATO SAUCE INGREDIENT.png" id="1_tu06v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_70ckv"]
+size = Vector2(16, 9)
+
+[node name="condecsedTomato" type="Sprite2D"]
+texture = ExtResource("1_tu06v")
+region_enabled = true
+region_rect = Rect2(14.568, 19.9061, 18.9183, 8.78349)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_70ckv")
