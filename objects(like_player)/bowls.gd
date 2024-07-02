@@ -97,13 +97,15 @@ func _on_area_sause_area_entered(area):
 	var body = area.get_parent()
 	if Respie_making == 2:
 		$SauceBowl.visible = true
+		
 		if area.get_parent().is_in_group("foods") and body.name == respie_sauce[Respie_lvl]:
 			if area.get_parent().is_in_group("foods"):
 				body.queue_free()
 				$SauceBowl.frame += 1
 				Respie_lvl += 1
-		
-
+				
+		if Respie_making == 3:
+			get_tree().change_scene_to_file("res://places/oven_part.tscn")
 
 
 #func _on_layers_bowl_animation_finished():

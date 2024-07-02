@@ -18,9 +18,11 @@ func _process(delta):
 	if Input.is_action_just_pressed("ui_accept"):
 		if Global.is_arrow_good:
 			$"../good".play()
+			queue_free()
 		else:
 			$"../bad".play()
-		queue_free()
+			get_tree().change_scene_to_file("res://places/level1.tscn")
+			queue_free()
 
 
 func _on_area_2d_area_entered(area):

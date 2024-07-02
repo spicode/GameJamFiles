@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cn216x53g8poh"]
+[gd_scene load_steps=7 format=3 uid="uid://cn216x53g8poh"]
 
 [ext_resource type="Texture2D" uid="uid://b7pu35rik31ot" path="res://art/OVEN with lasnagnasna in it BACKGROUND.png" id="1_uegdb"]
 [ext_resource type="PackedScene" uid="uid://byd4evg5rbut2" path="res://arrow.tscn" id="2_kqcwr"]
@@ -7,6 +7,8 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i3oxv"]
 size = Vector2(55, 123)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g7e8k"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -29,6 +31,10 @@ stream = ExtResource("3_uytq2")
 
 [node name="bad" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_c0a3s")
+volume_db = 24.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_g7e8k")
 
 [connection signal="area_entered" from="rightpart" to="Arrow" method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="rightpart" to="Arrow" method="_on_area_2d_area_exited"]
