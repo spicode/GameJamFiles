@@ -62,7 +62,7 @@ func _on_Foot_area_exited(area):
 
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("enemy"):
-		get_tree().reload_current_scene()
+		get_tree().change_scene_to_file("res://cridits.tscn")
 func _input(event):
 	if event.is_action_pressed("restartLevel"):
 		get_tree().reload_current_scene()
