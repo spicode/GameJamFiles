@@ -264,17 +264,18 @@ script = ExtResource("12_psedf")
 position = Vector2(0.378441, 0.6828)
 shape = SubResource("RectangleShape2D_r2i2f")
 
-[node name="hands" parent="." instance=ExtResource("13_5g2ai")]
-position = Vector2(-787, 800)
-scale = Vector2(12.215, 12.215)
-
 [node name="TextBox" parent="." instance=ExtResource("30_ev6go")]
 offset = Vector2(974.86, 427.79)
 scale = Vector2(0.585, 0.585)
 transform = Transform2D(0.585, 0, 0, 0.585, 974.86, 427.79)
 
+[node name="hands" parent="." instance=ExtResource("13_5g2ai")]
+position = Vector2(-302.646, 767.196)
+scale = Vector2(12.215, 12.215)
+
 [node name="CookingMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("31_tfyox")
+autoplay = true
 
 [connection signal="area_entered" from="drop_spot_invis2/SauceBowl/AreaSause" to="drop_spot_invis2" method="_on_area_sause_area_entered"]
 [connection signal="area_entered" from="drop_spot_invis2/LayersBowl/AreaLayer" to="drop_spot_invis2" method="_on_area_layer_area_entered"]

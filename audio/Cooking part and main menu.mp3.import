@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/Cooking part and main menu.mp3-88e9ddbf2fc30b
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0
