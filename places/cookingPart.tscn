@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://buy43th1ujst1"]
+[gd_scene load_steps=34 format=3 uid="uid://buy43th1ujst1"]
 
 [ext_resource type="PackedScene" uid="uid://byn7pabfelh75" path="res://objects(like_player)/brocoli.tscn" id="1_h6aca"]
 [ext_resource type="Texture2D" uid="uid://b08ncrkjgfiwy" path="res://art/random/LIBRESPRITE KITCHEN BACKGROUNG N2 (1).png" id="1_qd2ys"]
@@ -29,6 +29,8 @@
 [ext_resource type="Texture2D" uid="uid://btxty2tl0xsaq" path="res://art/layersBowl/lasanga layers 3.png" id="23_jskbc"]
 [ext_resource type="Texture2D" uid="uid://crjxjlgjujwc3" path="res://art/layersBowl/lasanga layers 4.png" id="24_eotmk"]
 [ext_resource type="Texture2D" uid="uid://dhc7dw36toorf" path="res://art/layersBowl/lasanga layers 5.png" id="25_5pi8m"]
+[ext_resource type="PackedScene" uid="uid://dcp8qtbkg0lk8" path="res://objects(like_player)/text_box.tscn" id="30_ev6go"]
+[ext_resource type="AudioStream" uid="uid://ckde7ql1trwfk" path="res://audio/Cooking part and main menu.mp3" id="31_tfyox"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r2i2f"]
 size = Vector2(62, 29)
@@ -67,11 +69,27 @@ texture = ExtResource("1_qd2ys")
 [node name="drop_spots" type="Node2D" parent="."]
 
 [node name="drop_spot_invis" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1171.43, 429.63)
+position = Vector2(1174.6, 439.153)
 scale = Vector2(10.5423, 3.57602)
 
+[node name="drop_spot_invis16" parent="drop_spots" instance=ExtResource("3_trbij")]
+position = Vector2(133.333, 828.571)
+scale = Vector2(7, 7)
+
+[node name="drop_spot_invis17" parent="drop_spots" instance=ExtResource("3_trbij")]
+position = Vector2(313.227, 826.455)
+scale = Vector2(7, 7)
+
+[node name="drop_spot_invis18" parent="drop_spots" instance=ExtResource("3_trbij")]
+position = Vector2(313.228, 1004.23)
+scale = Vector2(7, 7)
+
+[node name="drop_spot_invis19" parent="drop_spots" instance=ExtResource("3_trbij")]
+position = Vector2(130.159, 1011.64)
+scale = Vector2(7, 7)
+
 [node name="drop_spot_invis12" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1434.92, 420.106)
+position = Vector2(1434.92, 439.153)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis6" parent="drop_spots" instance=ExtResource("3_trbij")]
@@ -79,15 +97,15 @@ position = Vector2(1562.96, 177.778)
 scale = Vector2(10.554, 4.60128)
 
 [node name="drop_spot_invis7" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1285.71, 179.894)
+position = Vector2(1285.71, 191.534)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis8" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1006, 177)
+position = Vector2(1011.64, 186.243)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis9" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(742, 174)
+position = Vector2(744.974, 195.767)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis10" parent="drop_spots" instance=ExtResource("3_trbij")]
@@ -99,7 +117,7 @@ position = Vector2(133, 182)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis3" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(914.286, 426.455)
+position = Vector2(918.519, 438.095)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis2" parent="drop_spots" instance=ExtResource("3_trbij")]
@@ -107,23 +125,23 @@ position = Vector2(656.085, 433.862)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis4" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(385.185, 410.582)
+position = Vector2(386.243, 429.63)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis5" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(124.868, 410.582)
+position = Vector2(128.042, 432.804)
 scale = Vector2(10.5423, 3.57602)
 
 [node name="drop_spot_invis15" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1925.93, 415.873)
-scale = Vector2(6.18, 4.61)
+position = Vector2(1941.8, 444.444)
+scale = Vector2(5.995, 3.07)
 
 [node name="drop_spot_invis13" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1705.82, 415.873)
+position = Vector2(1705.82, 425.397)
 scale = Vector2(10.542, 4.351)
 
 [node name="drop_spot_invis14" parent="drop_spots" instance=ExtResource("3_trbij")]
-position = Vector2(1875.13, 180.952)
+position = Vector2(1866.67, 179.894)
 scale = Vector2(10.542, 4.351)
 
 [node name="ingredints" type="Node2D" parent="."]
@@ -143,7 +161,12 @@ scale = Vector2(6.8, 6.8)
 script = ExtResource("3_nbx7t")
 
 [node name="onion" parent="ingredints" groups=["foods"] instance=ExtResource("9_7fog1")]
-position = Vector2(130.159, 417.989)
+position = Vector2(123.81, 426.455)
+scale = Vector2(6.8, 6.8)
+script = ExtResource("3_nbx7t")
+
+[node name="onion2" parent="ingredints" groups=["foods"] instance=ExtResource("9_7fog1")]
+position = Vector2(136.508, 179.894)
 scale = Vector2(6.8, 6.8)
 script = ExtResource("3_nbx7t")
 
@@ -157,11 +180,11 @@ position = Vector2(676.19, 441.27)
 scale = Vector2(6.8, 6.8)
 
 [node name="flour" parent="ingredints" groups=["foods"] instance=ExtResource("11_ovqan")]
-position = Vector2(115.344, 179.894)
+position = Vector2(133.333, 827.513)
 scale = Vector2(6.8, 6.8)
 
 [node name="tomato" parent="ingredints" groups=["foods"] instance=ExtResource("14_tth8y")]
-position = Vector2(373.545, 415.873)
+position = Vector2(386.243, 429.63)
 scale = Vector2(6.8, 6.8)
 script = ExtResource("3_nbx7t")
 
@@ -171,7 +194,7 @@ scale = Vector2(6.8, 6.8)
 script = ExtResource("3_nbx7t")
 
 [node name="water" parent="ingredints" groups=["foods"] instance=ExtResource("8_0sft1")]
-position = Vector2(1007.41, 172.487)
+position = Vector2(1014.81, 183.069)
 scale = Vector2(6.8, 6.8)
 
 [node name="brocoli" parent="ingredints" groups=["foods"] instance=ExtResource("1_h6aca")]
@@ -187,13 +210,18 @@ position = Vector2(1432.8, 444.444)
 scale = Vector2(6.8, 6.8)
 script = ExtResource("3_nbx7t")
 
+[node name="cheese2" parent="ingredints" groups=["foods"] instance=ExtResource("2_6puvp")]
+position = Vector2(1281.48, 189.418)
+scale = Vector2(6.8, 6.8)
+script = ExtResource("3_nbx7t")
+
 [node name="egg" parent="ingredints" groups=["foods"] instance=ExtResource("4_5ixck")]
-position = Vector2(1266.67, 186.243)
+position = Vector2(317.46, 827.513)
 scale = Vector2(2.355, 2.355)
 script = ExtResource("3_nbx7t")
 
 [node name="garlic" parent="ingredints" groups=["foods"] instance=ExtResource("19_cqhnr")]
-position = Vector2(1942.86, 430.688)
+position = Vector2(1937.57, 434.921)
 scale = Vector2(8, 8)
 region_rect = Rect2(36.9997, 22.6087, 7.02679, 6.6214)
 
@@ -236,9 +264,18 @@ script = ExtResource("12_psedf")
 position = Vector2(0.378441, 0.6828)
 shape = SubResource("RectangleShape2D_r2i2f")
 
+[node name="TextBox" parent="." instance=ExtResource("30_ev6go")]
+offset = Vector2(974.86, 427.79)
+scale = Vector2(0.585, 0.585)
+transform = Transform2D(0.585, 0, 0, 0.585, 974.86, 427.79)
+
 [node name="hands" parent="." instance=ExtResource("13_5g2ai")]
-position = Vector2(-787, 800)
+position = Vector2(-302.646, 767.196)
 scale = Vector2(12.215, 12.215)
+
+[node name="CookingMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("31_tfyox")
+autoplay = true
 
 [connection signal="area_entered" from="drop_spot_invis2/SauceBowl/AreaSause" to="drop_spot_invis2" method="_on_area_sause_area_entered"]
 [connection signal="area_entered" from="drop_spot_invis2/LayersBowl/AreaLayer" to="drop_spot_invis2" method="_on_area_layer_area_entered"]

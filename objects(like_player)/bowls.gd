@@ -8,6 +8,7 @@ var making_sauce = false
 var mouse_offset = Vector2(0,0) 
 var respie_layers = ["flour","egg","water",""]
 var respie_sauce = ["condecsedTomato","oliveOil","parlsy","garlic","onion","tomato","salt",""]
+var respie_lasagna = ["lasagna layers","SauceBowlI","cheese","Carrot","Mushroom","brocoli","peas","onion","cheese"]
 @onready var layers_bowl = $LayersBowl
 @onready var sauce_bowl = $SauceBowl
 
