@@ -1,14 +1,272 @@
-[gd_scene load_steps=7 format=3 uid="uid://cn216x53g8poh"]
+[gd_scene load_steps=70 format=3 uid="uid://cn216x53g8poh"]
 
 [ext_resource type="Texture2D" uid="uid://b7pu35rik31ot" path="res://art/OVEN with lasnagnasna in it BACKGROUND.png" id="1_uegdb"]
 [ext_resource type="PackedScene" uid="uid://byd4evg5rbut2" path="res://arrow.tscn" id="2_kqcwr"]
 [ext_resource type="AudioStream" uid="uid://cbufxva4aiaty" path="res://audio/ting from furnace shi.mp3" id="3_uytq2"]
 [ext_resource type="AudioStream" uid="uid://dt3l4rl6dpec7" path="res://audio/fail (1) (1).mp3" id="4_c0a3s"]
+[ext_resource type="Texture2D" uid="uid://br51wrm57g22d" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-0.png" id="5_loggy"]
+[ext_resource type="Texture2D" uid="uid://6lq86j3eb7h" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-1.png" id="6_iri6m"]
+[ext_resource type="Texture2D" uid="uid://cyy7f6ar4yswl" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-2.png" id="7_8rv20"]
+[ext_resource type="Texture2D" uid="uid://cnrludi3l8poj" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-3.png" id="8_jle3j"]
+[ext_resource type="Texture2D" uid="uid://q2r881xxwb6j" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-4.png" id="9_dy6gw"]
+[ext_resource type="Texture2D" uid="uid://c63eqajlc4rge" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-5.png" id="10_ciwlq"]
+[ext_resource type="Texture2D" uid="uid://d3ttm2isiv4n" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-6.png" id="11_u3ok5"]
+[ext_resource type="Texture2D" uid="uid://blh081q3ey3k5" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-7.png" id="12_mpixr"]
+[ext_resource type="Texture2D" uid="uid://ctql5fxfh5q8y" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-8.png" id="13_frxv0"]
+[ext_resource type="Texture2D" uid="uid://df6gjbdee4b0d" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-9.png" id="14_7k7bs"]
+[ext_resource type="Texture2D" uid="uid://cp8lqonsawalp" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-10.png" id="15_3wi8m"]
+[ext_resource type="Texture2D" uid="uid://cj0np1hinc63f" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-11.png" id="16_igo4u"]
+[ext_resource type="Texture2D" uid="uid://b7c0iogwp6ekr" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-12.png" id="17_ska5l"]
+[ext_resource type="Texture2D" uid="uid://bos6w7nhd3hfs" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-13.png" id="18_lbsd3"]
+[ext_resource type="Texture2D" uid="uid://2kiwpss1hbpi" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-14.png" id="19_yp3sy"]
+[ext_resource type="Texture2D" uid="uid://dusefjjdefcb2" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-15.png" id="20_qgt7w"]
+[ext_resource type="Texture2D" uid="uid://b1yb1qd2d4gu2" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-16.png" id="21_y131r"]
+[ext_resource type="Texture2D" uid="uid://c1kg0nlyjtgpy" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-17.png" id="22_mmunk"]
+[ext_resource type="Texture2D" uid="uid://u2syj83uvomx" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-18.png" id="23_0d8yb"]
+[ext_resource type="Texture2D" uid="uid://c7he7xnxo7sd" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-19.png" id="24_4qgop"]
+[ext_resource type="Texture2D" uid="uid://dkpdykocf3fcl" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-20.png" id="25_hcfcx"]
+[ext_resource type="Texture2D" uid="uid://dbxo36tq4jeqk" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-21.png" id="26_jm6mk"]
+[ext_resource type="Texture2D" uid="uid://v6k35ijap81c" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-22.png" id="27_sw5kh"]
+[ext_resource type="Texture2D" uid="uid://d4g4aks7dgwon" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-23.png" id="28_70xdx"]
+[ext_resource type="Texture2D" uid="uid://c4qaiae4pcm3u" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-24.png" id="29_j568x"]
+[ext_resource type="Texture2D" uid="uid://g8vlqkd3bslb" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-25.png" id="30_6w22n"]
+[ext_resource type="Texture2D" uid="uid://c2tbn5r3b111o" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-26.png" id="31_f6t1p"]
+[ext_resource type="Texture2D" uid="uid://darn8x31iqrfc" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-27.png" id="32_8wfu4"]
+[ext_resource type="Texture2D" uid="uid://dotx5w8i4tmtq" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-28.png" id="33_r4ifl"]
+[ext_resource type="Texture2D" uid="uid://o1r6w1tgi3jk" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-29.png" id="34_cso8q"]
+[ext_resource type="Texture2D" uid="uid://ms05vnx4qpur" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-30.png" id="35_af0c2"]
+[ext_resource type="Texture2D" uid="uid://chqgdumjkytj0" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-31.png" id="36_y1nv2"]
+[ext_resource type="Texture2D" uid="uid://bdn3ifk8yid3s" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-32.png" id="37_ygbg1"]
+[ext_resource type="Texture2D" uid="uid://ywikmpggvel0" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-33.png" id="38_dh15r"]
+[ext_resource type="Texture2D" uid="uid://cpuf0eyj1gxts" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-34.png" id="39_0it1u"]
+[ext_resource type="Texture2D" uid="uid://dokstxawbhvgm" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-35.png" id="40_egw14"]
+[ext_resource type="Texture2D" uid="uid://cjjq5ukk1mu6" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-36.png" id="41_nxvmg"]
+[ext_resource type="Texture2D" uid="uid://dl67t30447xr2" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-37.png" id="42_yh6kc"]
+[ext_resource type="Texture2D" uid="uid://pjxxnbh5jiom" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-38.png" id="43_v8q3i"]
+[ext_resource type="Texture2D" uid="uid://bfsf7txfsiulj" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-39.png" id="44_0ar50"]
+[ext_resource type="Texture2D" uid="uid://bc5obda8ge0ns" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-40.png" id="45_ghgaf"]
+[ext_resource type="Texture2D" uid="uid://ddtek1r187ugj" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-41.png" id="46_cwks0"]
+[ext_resource type="Texture2D" uid="uid://b5ywn7b8tw6tn" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-42.png" id="47_cnmvy"]
+[ext_resource type="Texture2D" uid="uid://cg8a3uxyv367i" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-43.png" id="48_2vpb0"]
+[ext_resource type="Texture2D" uid="uid://cqka3y8s1kyxd" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-44.png" id="49_youjh"]
+[ext_resource type="Texture2D" uid="uid://dpjllg4cpfcjf" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-45.png" id="50_nh1p2"]
+[ext_resource type="Texture2D" uid="uid://bau5qhf5ahybq" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-46.png" id="51_6o040"]
+[ext_resource type="Texture2D" uid="uid://bs005q2rep0nf" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-47.png" id="52_5car3"]
+[ext_resource type="Texture2D" uid="uid://8vl2ynlmhhcy" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-48.png" id="53_ky6gt"]
+[ext_resource type="Texture2D" uid="uid://b1ibrnjdltnaq" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-49.png" id="54_m2gjt"]
+[ext_resource type="Texture2D" uid="uid://dd0s7gqmpwtfb" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-50.png" id="55_cxmns"]
+[ext_resource type="Texture2D" uid="uid://cgokw18t4wk" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-51.png" id="56_6uohd"]
+[ext_resource type="Texture2D" uid="uid://b8lintsb750a0" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-52.png" id="57_o36st"]
+[ext_resource type="Texture2D" uid="uid://dk12vd85vs75g" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-53.png" id="58_80kd1"]
+[ext_resource type="Texture2D" uid="uid://wldilg4rkwlt" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-54.png" id="59_qwwau"]
+[ext_resource type="Texture2D" uid="uid://t8ewneydiu1l" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-55.png" id="60_3txop"]
+[ext_resource type="Texture2D" uid="uid://bcn2r3di8beis" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-56.png" id="61_18d4l"]
+[ext_resource type="Texture2D" uid="uid://cfs7jqq42w1es" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-57.png" id="62_eoxf8"]
+[ext_resource type="Texture2D" uid="uid://do0gkv4yy05y8" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-58.png" id="63_5thpc"]
+[ext_resource type="Texture2D" uid="uid://rf81odj6761i" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-59.png" id="64_3vhii"]
+[ext_resource type="Texture2D" uid="uid://cwrxelwck3sgq" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-60.png" id="65_kt85e"]
+[ext_resource type="Texture2D" uid="uid://ch2mmwyy4yjmb" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-61.png" id="66_o60fd"]
+[ext_resource type="Texture2D" uid="uid://dha1j6rf53d60" path="res://art/OVEN-somking-BACKGROUND.png/62ace9bff60c4972e2390927ade5fb6b6UDAlmNIj98uAHZN-62.png" id="67_l1fp1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i3oxv"]
 size = Vector2(55, 123)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g7e8k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_loggy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_iri6m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8rv20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jle3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_dy6gw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ciwlq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_u3ok5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_mpixr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_frxv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_7k7bs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_3wi8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_igo4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ska5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_lbsd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_yp3sy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_qgt7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_y131r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_mmunk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_0d8yb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_4qgop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_hcfcx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_jm6mk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_sw5kh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_70xdx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_j568x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_6w22n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_f6t1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_8wfu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_r4ifl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_cso8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_af0c2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_y1nv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_ygbg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_dh15r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_0it1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_egw14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_nxvmg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_yh6kc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_v8q3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_0ar50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_ghgaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_cwks0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_cnmvy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_2vpb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_youjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_nh1p2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_6o040")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_5car3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_ky6gt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_m2gjt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_cxmns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_6uohd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_o36st")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_80kd1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_qwwau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_3txop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_18d4l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_eoxf8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_5thpc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_3vhii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_kt85e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_o60fd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_l1fp1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 24.0
+}]
 
 [node name="Node2D" type="Node2D"]
 
@@ -34,7 +292,10 @@ stream = ExtResource("4_c0a3s")
 volume_db = 24.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(909, 517)
+scale = Vector2(1.77, 1.77)
 sprite_frames = SubResource("SpriteFrames_g7e8k")
+frame_progress = 0.273997
 
 [connection signal="area_entered" from="rightpart" to="Arrow" method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="rightpart" to="Arrow" method="_on_area_2d_area_exited"]

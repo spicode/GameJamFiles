@@ -61,9 +61,21 @@ func _on_Foot_area_exited(area):
 
 
 func _on_area_2d_body_entered(body):
-	if body.is_in_group("enemy"):
+	if body.is_in_group("enemy") :
 		get_tree().change_scene_to_file("res://cridits.tscn")
+	
 func _input(event):
 	if event.is_action_pressed("restartLevel"):
 		get_tree().reload_current_scene()
 		print("restart")
+
+
+
+
+
+func _on_hitbox_area_entered(area):
+	if area.name == "ground":
+		get_tree().change_scene_to_file("res://cridits.tscn")
+		print("sgfh")
+	if area.name == "done":
+		get_tree().change_scene_to_file("res://places/cookingPart.tscn")
