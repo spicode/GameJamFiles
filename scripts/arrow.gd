@@ -16,7 +16,16 @@ func _process(delta):
 	if position.x > get_viewport_rect().size.x - texture.get_size().x or position.x < 0:
 		direction *= -1
 	if Input.is_action_just_pressed("ui_accept"):
-		down()
-func down():
+		if Global.is_arrow_good:
+			$"../good".play()
+		else:
+			$"../bad".play()
+		queue_free()
 
-	position.y = position.y + 20
+
+func _on_area_2d_area_entered(area):
+	Global.is_arrow_good = true
+
+
+func _on_area_2d_area_exited(area):
+	Global.is_arrow_good = false

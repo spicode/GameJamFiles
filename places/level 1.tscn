@@ -1,9 +1,65 @@
-[gd_scene load_steps=5 format=3 uid="uid://dd04c64553d2o"]
+[gd_scene load_steps=18 format=3 uid="uid://dd04c64553d2o"]
 
 [ext_resource type="Texture2D" uid="uid://bk7333h3lbq8y" path="res://art/random/new amazing town that i made all by my self yes it does look increadible it looks amazing doesnt it yes it does.png" id="1_fxquo"]
 [ext_resource type="PackedScene" uid="uid://cainv4ov4u6o8" path="res://objects(like_player)/enemy.tscn" id="2_kpswk"]
 [ext_resource type="PackedScene" uid="uid://lxc3fx3wwegb" path="res://objects(like_player)/player.tscn" id="3_ignpu"]
 [ext_resource type="AudioStream" uid="uid://cv0w6fetcslrt" path="res://audio/Untitled_Project_V1.mp3" id="3_k1byc"]
+[ext_resource type="Texture2D" uid="uid://cxyp0gluwwb5x" path="res://art/new-and-improved-head-of-the-fire-.png/d3fe302f46ea44b8e57c1494c7ccc92akjbTS33WcWYVZI3d-0.png" id="5_bfjiy"]
+[ext_resource type="Texture2D" uid="uid://biix8sif0wlmc" path="res://art/new-and-improved-head-of-the-fire-.png/d3fe302f46ea44b8e57c1494c7ccc92akjbTS33WcWYVZI3d-1.png" id="6_nd40t"]
+[ext_resource type="Texture2D" uid="uid://bf4nl27rogxha" path="res://art/new-and-improved-head-of-the-fire-.png/d3fe302f46ea44b8e57c1494c7ccc92akjbTS33WcWYVZI3d-2.png" id="7_2ml6i"]
+[ext_resource type="Texture2D" uid="uid://bnb4utc6n38s6" path="res://art/new-and-improved-head-of-the-fire-.png/d3fe302f46ea44b8e57c1494c7ccc92akjbTS33WcWYVZI3d-3.png" id="8_66cx5"]
+[ext_resource type="Texture2D" uid="uid://bcp0yqkefdgrm" path="res://art/new-and-improved-head-of-the-fire-.png/d3fe302f46ea44b8e57c1494c7ccc92akjbTS33WcWYVZI3d-4.png" id="9_r5rej"]
+[ext_resource type="Texture2D" uid="uid://bo5uwfqheg8d7" path="res://art/new-and-improved-head-of-the-fire-.png/d3fe302f46ea44b8e57c1494c7ccc92akjbTS33WcWYVZI3d-5.png" id="10_s3rew"]
+[ext_resource type="Texture2D" uid="uid://cbd1my4te4cxv" path="res://art/new-and-improved-head-of-the-fire-.png/d3fe302f46ea44b8e57c1494c7ccc92akjbTS33WcWYVZI3d-6.png" id="11_md2yj"]
+[ext_resource type="Texture2D" uid="uid://d16impyu01rjv" path="res://art/new-and-improved-head-of-the-fire-.png/d3fe302f46ea44b8e57c1494c7ccc92akjbTS33WcWYVZI3d-7.png" id="12_umhu3"]
+[ext_resource type="Texture2D" uid="uid://dd3j66gu20ucq" path="res://art/new-and-improved-head-of-the-fire-.png/d3fe302f46ea44b8e57c1494c7ccc92akjbTS33WcWYVZI3d-8.png" id="13_nsgry"]
+[ext_resource type="Texture2D" uid="uid://ckjj5brhi468u" path="res://art/new-and-improved-head-of-the-fire-.png/d3fe302f46ea44b8e57c1494c7ccc92akjbTS33WcWYVZI3d-9.png" id="14_nbj84"]
+[ext_resource type="Texture2D" uid="uid://cwau3ci62vbg1" path="res://art/new-and-improved-head-of-the-fire-.png/d3fe302f46ea44b8e57c1494c7ccc92akjbTS33WcWYVZI3d-10.png" id="15_y0s6p"]
+[ext_resource type="Texture2D" uid="uid://cedjp75yplcqy" path="res://art/new-and-improved-head-of-the-fire-.png/d3fe302f46ea44b8e57c1494c7ccc92akjbTS33WcWYVZI3d-11.png" id="16_bj6nx"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n0ect"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_bfjiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_nd40t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2ml6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_66cx5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_r5rej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_s3rew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_md2yj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_umhu3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_nsgry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_nbj84")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_y0s6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_bj6nx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Node2D" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [78.0]
@@ -36,3 +92,20 @@ collision_layer = 3
 [node name="Camera2D" type="Camera2D" parent="enemy2"]
 position = Vector2(9.58269, 13.6012)
 scale = Vector2(2.1, 2.1)
+zoom = Vector2(2, 2)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = -155.0
+offset_top = 566.0
+offset_right = 10263.0
+offset_bottom = 1130.0
+color = Color(0.52549, 0.717647, 0.360784, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(133, 119)
+rotation = 1.30158
+scale = Vector2(1.70833, 1.25)
+sprite_frames = SubResource("SpriteFrames_n0ect")
+frame_progress = 0.759972
