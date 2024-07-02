@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://buy43th1ujst1"]
+[gd_scene load_steps=35 format=3 uid="uid://buy43th1ujst1"]
 
 [ext_resource type="PackedScene" uid="uid://byn7pabfelh75" path="res://objects(like_player)/brocoli.tscn" id="1_h6aca"]
 [ext_resource type="Texture2D" uid="uid://b08ncrkjgfiwy" path="res://art/random/LIBRESPRITE KITCHEN BACKGROUNG N2 (1).png" id="1_qd2ys"]
@@ -31,6 +31,7 @@
 [ext_resource type="Texture2D" uid="uid://dhc7dw36toorf" path="res://art/layersBowl/lasanga layers 5.png" id="25_5pi8m"]
 [ext_resource type="PackedScene" uid="uid://dcp8qtbkg0lk8" path="res://objects(like_player)/text_box.tscn" id="30_ev6go"]
 [ext_resource type="AudioStream" uid="uid://ckde7ql1trwfk" path="res://audio/Cooking part and main menu.mp3" id="31_tfyox"]
+[ext_resource type="AudioStream" uid="uid://dt3l4rl6dpec7" path="res://audio/fail (1) (1).mp3" id="32_4si0h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r2i2f"]
 size = Vector2(62, 29)
@@ -276,6 +277,11 @@ scale = Vector2(12.215, 12.215)
 [node name="CookingMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("31_tfyox")
 autoplay = true
+
+[node name="fail" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("32_4si0h")
+volume_db = 24.0
+pitch_scale = 1.61
 
 [connection signal="area_entered" from="drop_spot_invis2/SauceBowl/AreaSause" to="drop_spot_invis2" method="_on_area_sause_area_entered"]
 [connection signal="area_entered" from="drop_spot_invis2/LayersBowl/AreaLayer" to="drop_spot_invis2" method="_on_area_layer_area_entered"]

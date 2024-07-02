@@ -47,6 +47,7 @@ func _process(delta):
 			get_tree().create_timer(4).timeout
 			Respie_making += 1
 			$SauceBowl.queue_free()
+	
 			$"../ingredints/SauceBowlI".visible = true
 func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT:
@@ -57,8 +58,11 @@ func _input(event):
 			else:
 				Global.is_Mixing = false
 				mouse_offset = get_global_mouse_position()-position
+				
 		else:
 			Global.is_Mixing = false
+			print("worng")
+			$"../fail".play()	
 		
 
 
@@ -79,11 +83,14 @@ func _on_area_layer_area_entered(area):
 	
 	
 	if Respie_making == 1:
-		if area.get_parent().is_in_group("foods") and body.name == respie_layers[Respie_lvl]:
-			body.queue_free()
-			layers_bowl.frame += 1
-			Respie_lvl += 1
-			
+		if area.get_parent().is_in_group("foods"):
+			if body.name == respie_layers[Respie_lvl]:
+				body.queue_free()
+				layers_bowl.frame += 1
+				Respie_lvl += 1
+			else:
+				print("worng")
+				$"../fail".play(0.2)	
 
 
 func _on_area_sause_area_entered(area):
@@ -95,7 +102,7 @@ func _on_area_sause_area_entered(area):
 				body.queue_free()
 				$SauceBowl.frame += 1
 				Respie_lvl += 1
-			
+		
 
 
 
