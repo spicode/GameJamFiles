@@ -61,7 +61,7 @@ func _input(event):
 				
 		else:
 			Global.is_Mixing = false
-			print("worng")
+			print("worng2")
 			$"../fail".play()	
 		
 
@@ -89,9 +89,9 @@ func _on_area_layer_area_entered(area):
 				layers_bowl.frame += 1
 				Respie_lvl += 1
 			else:
-				print("worng")
+				print("worng1")
 				$"../fail".play(0.2)	
-
+				body.queue_free()
 
 func _on_area_sause_area_entered(area):
 	var body = area.get_parent()

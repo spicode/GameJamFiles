@@ -4,33 +4,16 @@
 [ext_resource type="Script" path="res://scripts/arrow.gd" id="2_cnsk3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t03cb"]
-radius = 1.05125
+radius = 1.85836
 
 [node name="Sprite2D" type="Sprite2D"]
-position = Vector2(2, -8)
 scale = Vector2(3.805, 3.805)
 texture = ExtResource("1_08s2h")
 offset = Vector2(-13.33, 8.74)
+region_rect = Rect2(28.8919, 26.3924, 0, 0.135132)
 script = ExtResource("2_cnsk3")
-
-[node name="ColorRect" type="ColorRect" parent="."]
-visible = false
-offset_left = 11.0
-offset_top = -14.0
-offset_right = 18.0
-offset_bottom = -11.0
-scale = Vector2(1, 1.86957)
-
-[node name="Label" type="Label" parent="."]
-anchors_preset = -1
-anchor_bottom = 0.06
-offset_left = -6.14035
-offset_top = -34.2105
-offset_right = 33.8596
-offset_bottom = -15.0505
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, 0.262812)
 shape = SubResource("CircleShape2D_t03cb")

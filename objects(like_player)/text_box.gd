@@ -3,13 +3,11 @@ extends CanvasLayer
 @onready var text = $Label
 var text_to_say = ["Alright, dear"," let’s get started with making our lasagna."," First things first, let’s get our ingredients ready.",
 "For the pasta:","1:Put in flour","2:Put in eggs.","3:Put in water.","4:Now right click to mix it all together, nice and smooth.",
-"Great sweetheart.","For the sauce:"]
+"Great sweetheart.","For the sauce:","1:Put in concentrated tomato sauce.","2:Put in olive oil.","3:Put in parsley.","4:Put in garlic."]
 var txt2say_index = 0
 func _ready():
 	text.text = text_to_say[txt2say_index]
 	var tween = get_tree().create_tween()
-	
-	
 	$Label.visible_ratio = 0
 	tween.tween_property($Label,"visible_ratio", 1, 1)
 

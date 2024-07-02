@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dd04c64553d2o"]
+[gd_scene load_steps=5 format=3 uid="uid://dd04c64553d2o"]
 
 [ext_resource type="Texture2D" uid="uid://bk7333h3lbq8y" path="res://art/random/new amazing town that i made all by my self yes it does look increadible it looks amazing doesnt it yes it does.png" id="1_fxquo"]
 [ext_resource type="PackedScene" uid="uid://cainv4ov4u6o8" path="res://objects(like_player)/enemy.tscn" id="2_kpswk"]
 [ext_resource type="PackedScene" uid="uid://lxc3fx3wwegb" path="res://objects(like_player)/player.tscn" id="3_ignpu"]
+[ext_resource type="AudioStream" uid="uid://cv0w6fetcslrt" path="res://audio/Untitled_Project_V1.mp3" id="3_k1byc"]
 
 [node name="Node2D" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [78.0]
@@ -19,9 +20,13 @@ polygon = PackedVector2Array(11, 583, 10251, 585, 10389, 309, 10254, 555, 10252,
 
 [node name="enemy" parent="." instance=ExtResource("2_kpswk")]
 position = Vector2(1796, 238)
-scale = Vector2(2, 2)
+scale = Vector2(2.64, 2.64)
 collision_layer = 3
 collision_mask = 3
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="enemy"]
+stream = ExtResource("3_k1byc")
+autoplay = true
 
 [node name="enemy2" parent="." instance=ExtResource("3_ignpu")]
 position = Vector2(185, 162)

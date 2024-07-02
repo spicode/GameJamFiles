@@ -148,7 +148,7 @@ scale = Vector2(10.542, 4.351)
 [node name="ingredints" type="Node2D" parent="."]
 
 [node name="lasagna layers" parent="ingredints" groups=["foods"] instance=ExtResource("10_0hy3h")]
-position = Vector2(969.312, 931.217)
+position = Vector2(988.36, 688.889)
 scale = Vector2(6.8, 6.8)
 script = ExtResource("3_nbx7t")
 
@@ -227,7 +227,7 @@ scale = Vector2(8, 8)
 region_rect = Rect2(36.9997, 22.6087, 7.02679, 6.6214)
 
 [node name="SauceBowlI" parent="ingredints" groups=["foods"] instance=ExtResource("19_2okdf")]
-position = Vector2(951.323, 897.355)
+position = Vector2(773.545, 687.831)
 scale = Vector2(4.89, 4.89)
 
 [node name="condecsedTomato" parent="ingredints" groups=["foods"] instance=ExtResource("20_2tkd5")]
