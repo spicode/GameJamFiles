@@ -1,0 +1,143 @@
+[gd_scene load_steps=8 format=3 uid="uid://dcp8qtbkg0lk8"]
+
+[ext_resource type="Script" path="res://objects(like_player)/text_box.gd" id="1_n0f2l"]
+[ext_resource type="FontFile" uid="uid://dqovexq3ujss5" path="res://ChiKareGo2.ttf" id="1_r0dq0"]
+[ext_resource type="Script" path="res://objects(like_player)/MarginContainer.gd" id="2_0mtn1"]
+[ext_resource type="AudioStream" uid="uid://nw7xxmpengpp" path="res://audio/speeking.wav" id="4_wre5h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p4jma"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.858824, 0.858824, 0.858824, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_il121"]
+bg_color = Color(0.356863, 0.356863, 0.356863, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_uqloe"]
+font = ExtResource("1_r0dq0")
+font_size = 54
+
+[node name="TextBox" type="CanvasLayer"]
+script = ExtResource("1_n0f2l")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -379.0
+offset_right = -5.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("2_0mtn1")
+
+[node name="Panel" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_p4jma")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/margin_right = 1130
+theme_override_constants/margin_bottom = 365
+
+[node name="Panel" type="Panel" parent="MarginContainer/MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_il121")
+
+[node name="text" type="HBoxContainer" parent="MarginContainer/MarginContainer/Panel"]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -259.0
+offset_top = -65.0
+offset_right = 220.29
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.07514, 0.98926)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 2.58
+theme_override_constants/separation = 25
+
+[node name="end" type="HBoxContainer" parent="MarginContainer/MarginContainer/Panel"]
+layout_direction = 1
+layout_mode = 2
+offset_left = 1298.0
+offset_top = 237.0
+offset_right = 1796.0
+offset_bottom = 292.0
+scale = Vector2(0.999305, 1)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 2.58
+theme_override_constants/separation = 25
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer/Panel/end"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_stretch_ratio = 0.0
+theme_override_fonts/font = ExtResource("1_r0dq0")
+theme_override_font_sizes/font_size = 54
+text = "&"
+label_settings = SubResource("LabelSettings_uqloe")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="start" type="HBoxContainer" parent="MarginContainer/MarginContainer/Panel"]
+layout_direction = 1
+layout_mode = 2
+offset_left = -320.0
+offset_top = 29.0
+offset_right = 66.0
+offset_bottom = 84.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 2.58
+theme_override_constants/separation = 25
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer/Panel/start"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_stretch_ratio = 0.0
+theme_override_fonts/font = ExtResource("1_r0dq0")
+theme_override_font_sizes/font_size = 54
+text = "&"
+label_settings = SubResource("LabelSettings_uqloe")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer/MarginContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 141.0
+offset_top = 673.0
+offset_right = 1369.0
+offset_bottom = 969.0
+size_flags_horizontal = 4
+size_flags_stretch_ratio = 0.0
+theme_override_fonts/font = ExtResource("1_r0dq0")
+theme_override_font_sizes/font_size = 54
+text = "place holder text! "
+label_settings = SubResource("LabelSettings_uqloe")
+autowrap_mode = 3
+metadata/percent_visble = 0.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_wre5h")
+
+[connection signal="gui_input" from="MarginContainer" to="." method="_on_margin_container_gui_input"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
