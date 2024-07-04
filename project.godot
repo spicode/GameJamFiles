@@ -11,14 +11,21 @@ config_version=5
 [application]
 
 config/name="GameJam"
-run/main_scene="res://places/test_area.tscn"
-config/features=PackedStringArray("4.1", "Forward Plus")
+run/main_scene="res://places/cookingPart.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 <<<<<<<Updatedupstreamrun/main_scene="res://test_area.tscn"
 
 [autoload]
 
 Global="*res://scripts/global.gd"
+
+[display]
+
+window/size/viewport_width=1880
+window/size/viewport_height=990
+window/size/mode=4
+window/stretch/mode="viewport"
 
 [dotnet]
 
@@ -49,4 +56,5 @@ restartLevel={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
 environment/defaults/default_clear_color=Color(0.364706, 0.737255, 0.956863, 1)

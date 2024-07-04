@@ -18,13 +18,16 @@ func _process(delta):
 	if Input.is_action_just_pressed("ui_accept"):
 		if Global.is_arrow_good:
 			$"../good".play()
+			get_tree().change_scene_to_file("res://goodcredits.tscn")
 			queue_free()
 		else:
 			$"../bad".play()
 			$"../AnimatedSprite2D".visible = true
-			$"../AnimatedSprite2D".visible = false
+			$"../OvenSprite".visible = false
 			$"../AnimatedSprite2D".play()
+			await get_tree().create_timer(5).timeout
 			queue_free()
+			
 			
 			get_tree().change_scene_to_file("res://places/level1.tscn")
 			

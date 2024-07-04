@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://buy43th1ujst1"]
+[gd_scene load_steps=55 format=3 uid="uid://buy43th1ujst1"]
 
 [ext_resource type="PackedScene" uid="uid://byn7pabfelh75" path="res://objects(like_player)/brocoli.tscn" id="1_h6aca"]
 [ext_resource type="Texture2D" uid="uid://b08ncrkjgfiwy" path="res://art/random/LIBRESPRITE KITCHEN BACKGROUNG N2 (1).png" id="1_qd2ys"]
@@ -27,11 +27,29 @@
 [ext_resource type="Texture2D" uid="uid://oclun00klvuv" path="res://art/SauceAnimation/דשוSAUCE 1.png" id="21_4upg8"]
 [ext_resource type="Texture2D" uid="uid://deakd2dht6usm" path="res://art/layersBowl/lasanga layers 2.png" id="22_tv4we"]
 [ext_resource type="Texture2D" uid="uid://btxty2tl0xsaq" path="res://art/layersBowl/lasanga layers 3.png" id="23_jskbc"]
+[ext_resource type="Texture2D" uid="uid://jajermxsrrlm" path="res://art/drive-download-20240702T182322Z-001/LASANGA 2 .png" id="24_aw5co"]
 [ext_resource type="Texture2D" uid="uid://crjxjlgjujwc3" path="res://art/layersBowl/lasanga layers 4.png" id="24_eotmk"]
+[ext_resource type="Texture2D" uid="uid://be2ht7uaq5apf" path="res://art/drive-download-20240702T182322Z-001/LASANGA 3 .png" id="25_4nxng"]
 [ext_resource type="Texture2D" uid="uid://dhc7dw36toorf" path="res://art/layersBowl/lasanga layers 5.png" id="25_5pi8m"]
+[ext_resource type="Texture2D" uid="uid://jcf6m058srop" path="res://art/drive-download-20240702T182322Z-001/LASANGA 4 .png" id="26_nhv4k"]
+[ext_resource type="Texture2D" uid="uid://ctuarw6axxky4" path="res://art/drive-download-20240702T182322Z-001/LASANGA 5 .png" id="27_nj72h"]
+[ext_resource type="Texture2D" uid="uid://wm0uyodd2b35" path="res://art/drive-download-20240702T182322Z-001/LASANGA 6 .png" id="28_jno1b"]
+[ext_resource type="Texture2D" uid="uid://bttje1fs1hk2k" path="res://art/drive-download-20240702T182322Z-001/LASANGA 1 .png" id="29_2nnrx"]
+[ext_resource type="Texture2D" uid="uid://37berq84cve1" path="res://art/drive-download-20240702T182322Z-001/LASANGA 7 .png" id="29_owapx"]
 [ext_resource type="PackedScene" uid="uid://dcp8qtbkg0lk8" path="res://objects(like_player)/text_box.tscn" id="30_ev6go"]
+[ext_resource type="Texture2D" uid="uid://bsnwox1tfv1sc" path="res://art/drive-download-20240702T182322Z-001/LASANGA 8 .png" id="30_vv3ui"]
+[ext_resource type="Texture2D" uid="uid://c7syla7tt3wjb" path="res://art/drive-download-20240702T182322Z-001/LASANGA 8 AND HALF .png" id="31_8ai17"]
 [ext_resource type="AudioStream" uid="uid://ckde7ql1trwfk" path="res://audio/Cooking part and main menu.mp3" id="31_tfyox"]
 [ext_resource type="AudioStream" uid="uid://dt3l4rl6dpec7" path="res://audio/fail (1) (1).mp3" id="32_4si0h"]
+[ext_resource type="Texture2D" uid="uid://dsfm0bxn7mya2" path="res://art/drive-download-20240702T182322Z-001/LASANGA 9 .png" id="32_hdmum"]
+[ext_resource type="Texture2D" uid="uid://ctc52ef8fsto8" path="res://art/drive-download-20240702T182322Z-001/LASANGA 10 .png" id="33_x7gwl"]
+[ext_resource type="Texture2D" uid="uid://ccqkcl2a1wut6" path="res://art/drive-download-20240702T182322Z-001/LASANGA 11 .png" id="34_fxf2e"]
+[ext_resource type="Texture2D" uid="uid://bcvrykfsesjis" path="res://art/drive-download-20240702T182322Z-001/LASANGA 12 .png" id="35_jbyyh"]
+[ext_resource type="Texture2D" uid="uid://daf74d7vvchkj" path="res://art/drive-download-20240702T182322Z-001/LASANGA 13 .png" id="36_n6jb0"]
+[ext_resource type="Texture2D" uid="uid://com0asxl7jkhu" path="res://art/drive-download-20240702T182322Z-001/LASANGA 14 .png" id="37_p3g1w"]
+[ext_resource type="Texture2D" uid="uid://7vtjr0u4xlhr" path="res://art/drive-download-20240702T182322Z-001/LASANGA 15 .png" id="38_cmyto"]
+[ext_resource type="Texture2D" uid="uid://dk53jamnnv77b" path="res://art/drive-download-20240702T182322Z-001/LASANGA 16 .png" id="39_efi46"]
+[ext_resource type="Texture2D" uid="uid://c31juea7gekds" path="res://art/drive-download-20240702T182322Z-001/LASANGA 17 .png" id="40_s4fwt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r2i2f"]
 size = Vector2(62, 29)
@@ -58,6 +76,71 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nd3tg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_2nnrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_aw5co")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_4nxng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_nhv4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_nj72h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_jno1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_owapx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_vv3ui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_8ai17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_hdmum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_x7gwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_fxf2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_jbyyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_n6jb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_p3g1w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_cmyto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_efi46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_s4fwt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m455b"]
+size = Vector2(60.8945, 12.318)
 
 [node name="CookingPart" type="Node2D"]
 scale = Vector2(0.945, 0.945)
@@ -148,7 +231,7 @@ scale = Vector2(10.542, 4.351)
 [node name="ingredints" type="Node2D" parent="."]
 
 [node name="lasagna layers" parent="ingredints" groups=["foods"] instance=ExtResource("10_0hy3h")]
-position = Vector2(988.36, 688.889)
+position = Vector2(1008.47, 622.222)
 scale = Vector2(6.8, 6.8)
 script = ExtResource("3_nbx7t")
 
@@ -206,12 +289,14 @@ scale = Vector2(4.485, 4.485)
 position = Vector2(1722.75, 425.397)
 scale = Vector2(6.8, 6.8)
 
-[node name="cheese" parent="ingredints" groups=["foods"] instance=ExtResource("2_6puvp")]
+[node name="cheese_" parent="ingredints" groups=["foods"] instance=ExtResource("2_6puvp")]
+visible = false
 position = Vector2(1432.8, 444.444)
 scale = Vector2(6.8, 6.8)
 script = ExtResource("3_nbx7t")
 
-[node name="cheese2" parent="ingredints" groups=["foods"] instance=ExtResource("2_6puvp")]
+[node name="cheese2_" parent="ingredints" groups=["foods"] instance=ExtResource("2_6puvp")]
+visible = false
 position = Vector2(1281.48, 189.418)
 scale = Vector2(6.8, 6.8)
 script = ExtResource("3_nbx7t")
@@ -227,7 +312,7 @@ scale = Vector2(8, 8)
 region_rect = Rect2(36.9997, 22.6087, 7.02679, 6.6214)
 
 [node name="SauceBowlI" parent="ingredints" groups=["foods"] instance=ExtResource("19_2okdf")]
-position = Vector2(773.545, 687.831)
+position = Vector2(787.302, 616.931)
 scale = Vector2(4.89, 4.89)
 
 [node name="condecsedTomato" parent="ingredints" groups=["foods"] instance=ExtResource("20_2tkd5")]
@@ -252,7 +337,7 @@ position = Vector2(2, 0.5)
 shape = SubResource("RectangleShape2D_r2i2f")
 
 [node name="LayersBowl" parent="drop_spot_invis2" instance=ExtResource("11_lqtwk")]
-position = Vector2(-0.256897, -0.872215)
+position = Vector2(0.722588, -5.82829)
 scale = Vector2(0.377358, 0.803213)
 sprite_frames = SubResource("SpriteFrames_ts074")
 frame = 0
@@ -264,6 +349,20 @@ script = ExtResource("12_psedf")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="drop_spot_invis2/LayersBowl/AreaLayer"]
 position = Vector2(0.378441, 0.6828)
 shape = SubResource("RectangleShape2D_r2i2f")
+
+[node name="LasgnaBowl" parent="drop_spot_invis2" instance=ExtResource("11_lqtwk")]
+position = Vector2(0.26622, -8.74244)
+scale = Vector2(0.377358, 0.803213)
+sprite_frames = SubResource("SpriteFrames_nd3tg")
+frame = 0
+frame_progress = 0.0
+script = ExtResource("12_psedf")
+
+[node name="AreaLasgna" type="Area2D" parent="drop_spot_invis2/LasgnaBowl"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="drop_spot_invis2/LasgnaBowl/AreaLasgna"]
+position = Vector2(0.16555, 12.9894)
+shape = SubResource("RectangleShape2D_m455b")
 
 [node name="TextBox" parent="." instance=ExtResource("30_ev6go")]
 offset = Vector2(974.86, 427.79)
@@ -283,6 +382,16 @@ stream = ExtResource("32_4si0h")
 volume_db = 24.0
 pitch_scale = 1.61
 
+[node name="Oven" type="Button" parent="."]
+visible = false
+offset_left = 1725.0
+offset_right = 1922.0
+offset_bottom = 104.0
+text = "Oven"
+
 [connection signal="area_entered" from="drop_spot_invis2/SauceBowl/AreaSause" to="drop_spot_invis2" method="_on_area_sause_area_entered"]
 [connection signal="area_entered" from="drop_spot_invis2/LayersBowl/AreaLayer" to="drop_spot_invis2" method="_on_area_layer_area_entered"]
 [connection signal="input_event" from="drop_spot_invis2/LayersBowl/AreaLayer" to="drop_spot_invis2/SauceBowl" method="_on_area_layer_input_event"]
+[connection signal="area_entered" from="drop_spot_invis2/LasgnaBowl/AreaLasgna" to="drop_spot_invis2" method="_on_area_lasgna_area_entered"]
+[connection signal="input_event" from="drop_spot_invis2/LasgnaBowl/AreaLasgna" to="drop_spot_invis2/SauceBowl" method="_on_area_layer_input_event"]
+[connection signal="pressed" from="Oven" to="drop_spot_invis2" method="_on_oven_pressed"]
