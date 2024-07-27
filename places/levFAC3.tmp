@@ -23,7 +23,7 @@
 size = Vector2(455, 309)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8woy"]
-size = Vector2(11224, 689)
+size = Vector2(10481, 689)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3sxgt"]
 size = Vector2(314, 1041)
@@ -107,6 +107,7 @@ stream = ExtResource("3_k1byc")
 autoplay = true
 
 [node name="enemy2" parent="." instance=ExtResource("3_ignpu")]
+visible = false
 position = Vector2(185, 162)
 scale = Vector2(2.5, 2.5)
 collision_layer = 3
@@ -120,6 +121,14 @@ zoom = Vector2(2, 2)
 stream = ExtResource("5_velw7")
 autoplay = true
 
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = -155.0
+offset_top = 566.0
+offset_right = 10263.0
+offset_bottom = 1130.0
+color = Color(0.52549, 0.717647, 0.360784, 1)
+metadata/_edit_use_anchors_ = true
+
 [node name="done" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="done"]
@@ -129,27 +138,17 @@ shape = SubResource("RectangleShape2D_7ab62")
 [node name="ground" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ground"]
-position = Vector2(4724, 860.5)
+position = Vector2(5095.5, 860.5)
 shape = SubResource("RectangleShape2D_d8woy")
 
-[node name="ColorRect2" type="ColorRect" parent="ground"]
-offset_left = -1286.0
-offset_top = 577.0
-offset_right = 9132.0
-offset_bottom = 1141.0
-scale = Vector2(1.12, 1)
-color = Color(0.52549, 0.717647, 0.360784, 1)
-metadata/_edit_use_anchors_ = true
-
 [node name="fire" type="Area2D" parent="ground"]
-position = Vector2(-233, -32)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ground/fire"]
 position = Vector2(-142, 229)
 shape = SubResource("RectangleShape2D_3sxgt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="ground/fire"]
-position = Vector2(320, 138)
+position = Vector2(133, 119)
 rotation = 1.30158
 scale = Vector2(1.70833, 1.25)
 sprite_frames = SubResource("SpriteFrames_n0ect")

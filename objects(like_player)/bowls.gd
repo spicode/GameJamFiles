@@ -21,6 +21,7 @@ func _ready():
 	$LayersBowl.frame = 0
 	$"../ingredints/lasagna layers".visible = false
 	$"../ingredints/SauceBowlI".visible = false
+	$LasgnaBowl.visible = false
 	Respie_making = 1
 	if is_instance_valid(layers_bowl):
 		print("LayersBowl node found!")

@@ -1,11 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://dcp8qtbkg0lk8"]
+[gd_scene load_steps=7 format=3 uid="uid://dcp8qtbkg0lk8"]
 
 [ext_resource type="Script" path="res://objects(like_player)/text_box.gd" id="1_n0f2l"]
 [ext_resource type="FontFile" uid="uid://dqovexq3ujss5" path="res://ChiKareGo2.ttf" id="1_r0dq0"]
 [ext_resource type="Script" path="res://objects(like_player)/MarginContainer.gd" id="2_0mtn1"]
 [ext_resource type="Texture2D" uid="uid://d2277hde4y4es" path="res://art/text box.png" id="3_b3ctw"]
 [ext_resource type="AudioStream" uid="uid://nw7xxmpengpp" path="res://audio/speeking.wav" id="4_wre5h"]
-[ext_resource type="Texture2D" uid="uid://dawrxfnk7tm6g" path="res://art/gotooven gotokitchen button .png" id="6_44jl7"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_uqloe"]
 font = ExtResource("1_r0dq0")
@@ -15,15 +14,14 @@ font_size = 54
 script = ExtResource("1_n0f2l")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-anchors_preset = -1
-anchor_left = 0.135
-anchor_top = 0.647
-anchor_right = 0.812
-anchor_bottom = 0.896
-offset_left = -33.8
-offset_top = -9.53003
-offset_right = -75.5601
-offset_bottom = 13.96
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -379.0
+offset_right = -5.0
+offset_bottom = -16.0
 grow_horizontal = 2
 grow_vertical = 0
 script = ExtResource("2_0mtn1")
@@ -47,37 +45,11 @@ theme_override_font_sizes/font_size = 54
 text = "place holder text! "
 label_settings = SubResource("LabelSettings_uqloe")
 autowrap_mode = 3
-visible_characters = 0
-visible_ratio = 0.0
+visible_ratio = -0.0526316
 metadata/percent_visble = 0.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_wre5h")
 
-[node name="Close" type="MarginContainer" parent="."]
-offset_left = 1418.0
-offset_top = 630.0
-offset_right = 1545.0
-offset_bottom = 876.0
-
-[node name="Open" type="MarginContainer" parent="."]
-offset_left = 96.0
-offset_top = 312.0
-offset_right = 216.0
-offset_bottom = 430.0
-
-[node name="Sprite2D" type="Sprite2D" parent="Open"]
-position = Vector2(60, 60)
-rotation = 0.0436332
-texture = ExtResource("6_44jl7")
-region_enabled = true
-region_rect = Rect2(839.386, 27.3013, 116.82, 118.362)
-
-[node name="MarginContainer2" type="MarginContainer" parent="."]
-offset_right = 1405.0
-offset_bottom = 40.0
-
 [connection signal="gui_input" from="MarginContainer" to="." method="_on_margin_container_gui_input"]
 [connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
-[connection signal="gui_input" from="Close" to="." method="_on_close_gui_input"]
-[connection signal="gui_input" from="Open" to="." method="_on_open_gui_input"]

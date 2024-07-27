@@ -290,13 +290,11 @@ position = Vector2(1722.75, 425.397)
 scale = Vector2(6.8, 6.8)
 
 [node name="cheese_" parent="ingredints" groups=["foods"] instance=ExtResource("2_6puvp")]
-visible = false
 position = Vector2(1432.8, 444.444)
 scale = Vector2(6.8, 6.8)
 script = ExtResource("3_nbx7t")
 
 [node name="cheese2_" parent="ingredints" groups=["foods"] instance=ExtResource("2_6puvp")]
-visible = false
 position = Vector2(1281.48, 189.418)
 scale = Vector2(6.8, 6.8)
 script = ExtResource("3_nbx7t")
